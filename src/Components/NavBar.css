@@ -1,0 +1,31 @@
+.nav-links{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0.5rem;
+    font-size: 20px;
+    letter-spacing: 0.109em;
+    border: solid;
+    border-width: 2px;
+}
+
+.logo-container{
+    display: grid;
+    justify-items: center;
+}
+
+.logo{
+    max-width: 20vh;
+}
+
+li {
+    display: inline;
+    padding: 3rem;
+    color: black;
+    font-size: larger;
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+}

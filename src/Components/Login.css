@@ -1,0 +1,64 @@
+/* Login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    min-width: 50vw;
+    --dot-bg: rgb(255, 255, 255);
+    --dot-color: rgb(0, 0, 0);
+    --dot-size: 1.8px;
+    --dot-space: 25px;
+    background:
+    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+  }
+  
+  .register-container{
+    display: flex;
+    text-justify:auto;
+    justify-content: center;
+    padding: 0.3rem;
+    a{
+      color: rgb(252, 157, 173) ;
+      text-align: right;
+    }
+  }
+
+  .forgot-container{
+    display: flex;
+    text-justify:auto;
+    justify-content: right;
+    padding: 0.5rem;
+    a{
+      color: rgb(252, 157, 173) ;
+      text-align: right;
+    }
+  }
+
+  .form-container {
+    display: grid;
+    backdrop-filter: blur(6px);
+    padding: 13vh;
+    min-width: 35vw;
+    justify-content: center;
+    button{
+      border: solid;
+      border-radius: 0;
+      border-width: 1px;
+    }
+  }
+  
+  .form-group{
+    padding: 20px;
+    min-width: 20vw;
+    align-items: center;
+  }
+
+  .form-control{
+    border: var(--bs-border-width) solid #000;
+    border-radius: 0;
+  }
+
