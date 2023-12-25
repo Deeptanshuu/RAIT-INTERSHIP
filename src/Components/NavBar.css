@@ -1,3 +1,20 @@
+.mantra {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    max-height: 25px;
+    padding: 0.5rem;
+    font-size: large;
+    font-weight: 200;
+    letter-spacing: 0.15em;
+    transition: all 0.3s 0.1s cubic-bezier(.79,.14,.15,.86);
+  }
+  
+  .mantra:hover{
+      font-weight: 500;
+      letter-spacing: 0.3em;
+  } 
+
 .nav-links{
     display: flex;
     justify-content: center;
@@ -9,6 +26,20 @@
 }
 
 
+ul.nav-links{
+    display:flex;
+    justify-content:space-evenly;
+    list-style: none;
+    li {
+        color: rgba(0, 0, 0, 0.75);
+        font-size: 1em;
+        font-weight: 500;
+        transition: all 0.3s 0.1s ease-in-out;
+    }
+    li:hover{
+        color: #b1a2a2;
+    }
+}
 
 
 .logo-container{
@@ -37,22 +68,6 @@
     max-width: 17vh;
     max-height: auto;
 }
-
-ul.nav-links{
-    display:flex;
-    justify-content:space-evenly;
-    list-style: none;
-    li {
-        color: rgba(0, 0, 0, 0.75);
-        font-size: 1em;
-        font-weight: 500;
-        transition: color;
-    }
-    li:hover{
-        color: #cac8c8;
-    }
-}
-
 
 a{
     text-decoration: none;

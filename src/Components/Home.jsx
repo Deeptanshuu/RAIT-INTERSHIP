@@ -1,41 +1,66 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
+  // eslint-disable-next-line
+  const scrollToSection = (sectionId) => {
+    const targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleClick = (sectionId) => {
+    return () => {
+      const shopLink = "/shop"; // Replace with the actual path to your '/shop' page
+      const targetUrl = shopLink + '#' + sectionId;
+      setTimeout(() => {
+        window.location.href = targetUrl;
+      }, 300);  // Adjust the delay time as needed (in milliseconds)
+    };
+  };
+
   return (
     <>
-      <div className="mantra">
-        <p>-Tsuki – Illuminate Your Style, Consciously.-</p>
-      </div>
-
       <div className="pic-wrapper row">
-        <div className="pic-container col-4">
+        <div className="pic-container basics col-4">
           <img src="/pic-1.png" alt="pic-1" id="pic-1" className="img" />
           <div className="button">
             <h3>-BASICS-</h3>
-            <a href="/shop" className="btn btn-outline-light btn-lg" type="button">
-              See More
-            </a>
+            <Link to="/shop">
+              <button className="btn btn-outline-light" onClick={handleClick("basics")}>
+                See More
+              </button>
+            </Link>
           </div>
         </div>
-        <div className="pic-container col-4">
-          <img src="/pic-2.png" alt="pic-2" id="pic-2" className="img" />
-          <div className="button">
-            <h3>-KINTS-</h3>
-            <a href="/shop" className="btn btn-outline-light btn-lg" type="button">
-              See More
-            </a>
-          </div>
-        </div>
-        <div className="pic-container col-4">
+        <div className="pic-container melts col-4">
           <img src="/pic-3.png" alt="pic-2" id="pic-3" className="img" />
           <div className="button">
             <h3>-MELTS-</h3>
-            <a href="/shop" className="btn btn-outline-light btn-lg" type="button">
-              See More
-            </a>
+            <Link to="/shop">
+              <button className="btn btn-outline-light" onClick={handleClick("melts")}>
+                See More
+              </button>
+            </Link>
           </div>
         </div>
+        <div className="pic-container kints col-4">
+          <img src="/pic-2.png" alt="pic-2" id="pic-2" className="img" />
+          <div className="button">
+            <h3>-KINTS-</h3>
+            <Link to="/shop">
+              <button className="btn btn-outline-light" onClick={handleClick("kints")}>
+                See More
+              </button>
+            </Link>
+          </div>
+        </div>
+
       </div>
 
       <div className="about row">
@@ -89,8 +114,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="help">
-        <div className="help-wrapper">
+      <div className="bottom">
+        <div className="help-box">
           <div className="help-text">
             <p>
               As always, we’re here to help, so please get in touch if you have
@@ -98,9 +123,9 @@ const Home = () => {
               service team at <b>hello@tsuki.market</b>
             </p>
           </div>
-        </div>
-        <div className="help-img">
-          <img src="/bottom.png" alt="" />
+          <div className="help-img">
+            <img src="/bottom.png" alt="" />
+          </div>
         </div>
       </div>
     </>

@@ -8,8 +8,11 @@ const NavBar = () => {
       <nav className="Navbar">
         <div className="logo-container">
           <a href="/"><img src="/TSUKI_LOGO.png" class="logo" alt="logo img" /></a>
+          <div className="mantra">
+            <p>-Tsuki – Illuminate Your Style, Consciously.-</p>
+          </div>
           <div className="nav-icons">
-            <a href="/">
+            <a href="/shop">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
