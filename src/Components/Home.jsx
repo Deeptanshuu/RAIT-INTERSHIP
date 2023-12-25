@@ -1,21 +1,110 @@
-import React from 'react'
+import React from "react";
+import "./Home.css";
 
 const Home = () => {
   return (
     <>
-      <div className="row">
-        <div className="col-4">
-          1
+      <div className="mantra">
+        <p>-Tsuki – Illuminate Your Style, Consciously.-</p>
+      </div>
+
+      <div className="pic-wrapper row">
+        <div className="pic-container col-4">
+          <img src="/pic-1.png" alt="pic-1" id="pic-1" className="img" />
+          <div className="button">
+            <h3>-BASICS-</h3>
+            <a href="/shop" className="btn btn-outline-light btn-lg" type="button">
+              See More
+            </a>
+          </div>
         </div>
-        <div className="col-4">
-          2
+        <div className="pic-container col-4">
+          <img src="/pic-2.png" alt="pic-2" id="pic-2" className="img" />
+          <div className="button">
+            <h3>-KINTS-</h3>
+            <a href="/shop" className="btn btn-outline-light btn-lg" type="button">
+              See More
+            </a>
+          </div>
         </div>
-        <div className="col-4">
-          3
+        <div className="pic-container col-4">
+          <img src="/pic-3.png" alt="pic-2" id="pic-3" className="img" />
+          <div className="button">
+            <h3>-MELTS-</h3>
+            <a href="/shop" className="btn btn-outline-light btn-lg" type="button">
+              See More
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="about row">
+        <div className="about-text col-6">
+          <h1>-ABOUT-</h1>
+          <small>
+            Welcome to Tsuki, where <b>"Tsuki [つき]" meaning 'moon'</b> in
+            Japanese, symbolizes the essence of our brand – a celestial,
+            timeless beauty that illuminates the night sky. We believe that
+            fashion and home products should not only be stylish but also
+            ethically made. From the cotton fields to the final stitch, we
+            prioritize ethical sourcing, fair labor, and environmental
+            consciousness.{" "}
+          </small>
+        </div>
+        <div className="about-image col-6">
+          <img src="/about-pic.png" alt="about-img" />
+        </div>
+      </div>
+
+      <div className="craft row">
+        <div className="craft-img col-6">
+          <img src="/carft.png" alt="craftsmanship" />
+        </div>
+        <div className="craft-text col-6">
+          <h1>-CRAFTSMANSHIP-</h1>
+          <small>
+            At Tsuki, we believe that fashion and home products should not only
+            be stylish but also ethically made.From the cotton fields to the
+            final stitch, we prioritize ethical sourcing, fair labor, and
+            environmental consciousness.Our unisex clothing and home goods are a
+            testament to our commitment to sustainable and responsible
+            manufacturing practices.
+          </small>
+        </div>
+      </div>
+
+      <div className="join row">
+        <div className="join-text col-6">
+          <h1>-TSUKI COMMUNITY-</h1>
+          <small>
+            We invite you to explore our collections, where fashion meets
+            conscience, and where every purchase becomes a vote for a better,
+            more sustainable future. Join the Tsuki community and embrace the
+            journey of self-expression, ethical living, and the artistry of
+            moonlit stories.
+          </small>
+        </div>
+        <div className="join-img col-6">
+          <img src="/join.png" alt="join-img" />
+        </div>
+      </div>
+
+      <div className="help">
+        <div className="help-wrapper">
+          <div className="help-text">
+            <p>
+              As always, we’re here to help, so please get in touch if you have
+              any questions or concerns about our products. Contact our customer
+              service team at <b>hello@tsuki.market</b>
+            </p>
+          </div>
+        </div>
+        <div className="help-img">
+          <img src="/bottom.png" alt="" />
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -3,6 +3,7 @@
     background-color: black;
     color: white;
     padding: 5rem;
+    overflow: hidden;
     h1{
         font-size: medium;
         border-bottom: solid;
@@ -11,6 +12,11 @@
         line-height: 4rem;
         letter-spacing: 0.3em;
         font-weight: bold;
+    }
+    
+    p{
+        font-weight: 100;
+        font-size: smaller
     }
 }
 .icons-container{
@@ -25,4 +31,15 @@
 
 .quick-links{
     display: inline
+}
+
+.input-group{
+    a{
+        border-radius: 0px;
+        border: solid;
+        border-width: 1px;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+    }
+
 }

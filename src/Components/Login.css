@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 90vh;
     min-width: 50vw;
     --dot-bg: rgb(255, 255, 255);
     --dot-color: rgb(0, 0, 0);
@@ -20,9 +20,9 @@
     display: flex;
     text-justify:auto;
     justify-content: center;
-    padding: 0.3rem;
+    padding: 0.1rem;
     a{
-      color: rgb(252, 157, 173) ;
+      color: rgb(240, 95, 119) ;
       text-align: right;
     }
   }
@@ -33,15 +33,15 @@
     justify-content: right;
     padding: 0.5rem;
     a{
-      color: rgb(252, 157, 173) ;
+      color: rgb(240, 95, 119) ;
       text-align: right;
     }
   }
 
   .form-container {
     display: grid;
-    backdrop-filter: blur(6px);
-    padding: 13vh;
+    background-color: rgba(245, 222, 179, 0.74);
+    padding: 10vh;
     min-width: 35vw;
     justify-content: center;
     button{
@@ -52,8 +52,8 @@
   }
   
   .form-group{
-    padding: 20px;
-    min-width: 20vw;
+    padding: 10px;
+    min-width: 23vw;
     align-items: center;
   }
 

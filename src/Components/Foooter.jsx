@@ -8,12 +8,12 @@ const Footer = () => {
         <div className="row">
           <div className="col-6">
             <h1>NEWSLETTER</h1>
-            <h6>Subscribe to be the first to hear about our latest collections, offers and news about the brand.</h6>
+            <p>Subscribe to be the first to hear about our latest collections, offers and news about the brand.</p>
             <div class="input-group mb-4">
               <input type="text" class="form-control" placeholder="Subscribe to our lettebox with you email!" aria-label="letterbox-email" aria-describedby="button-addon2"/>
-              <button class="btn btn-outline-light" type="button" id="letterbox-email">Join</button>
+              <a href='/' class="btn btn-outline-light" type="button" id="letterbox-email">Join</a>
             </div>
-            <h1>© Tsuki Market 2023</h1>
+            <p>© Tsuki Market 2023</p>
           </div>
           <div className="col-6">
               <h1>SOCIALS</h1>
