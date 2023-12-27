@@ -10,6 +10,10 @@
     h1{
         font-weight: 300;
         letter-spacing: 0.1em;
+        transition: all 0.5s 0.2s cubic-bezier(.79,.14,.15,.86);
+    }
+    h1:hover{
+        letter-spacing: 0.2em;
     }
   }
 
@@ -20,31 +24,55 @@
     overflow: hidden;
 }
 
+
 .banner-text{
     display: flex;
     border: solid;
     border-width: 1px;
     border-top: 0px;
     border-right: 0px;
-    h1{
+    padding-left: 5vw;
+    a{
         display: flex;
-        margin-top: 25%;
-        margin-left: 10%;
-        font-weight: 100;
+        text-align: center;
+        justify-content: center;
+        min-width: 200px;
+        max-height: 50px;
+        color: black;
+        border: solid;
+        border-width: 1px;
+        padding: 0.3rem 0.5em;
+        margin-top: 30vh;
         letter-spacing: 0.1em;
-        font-size: 35px;
-        text-decoration: underline;
-        transition: all 0.5s 0.1s ease-in-out;
+        font-size: 25px;
+        font-weight: 100;
+        transition: all 0.5s 0.2s cubic-bezier(.79,.14,.15,.86);
     }
-    h1:hover{
-        font-size: 45px;
-        letter-spacing: 0.5em;
+
+    a:hover{
+        border-color: #000000;
+        background-color: black;
+        color: white;
+        border: 1px white solid;
+        min-width: 210px;
+        max-height: 55px;
+        font-size: 27px;
+        letter-spacing: 0.15em;
     }
+}
+
+.banner-text-above-btn{
+    display: flex;
+    position: absolute;
+    margin-top: 25vh;
+    font-family: 'Courier New', monospace;
+    font-size: 35px;
+    font-weight: 100;
 }
 
 .banner-basic{
     border-top: 0px;
-    --dot-bg: #57dffd;
+    --dot-bg: #95ecff;
     --dot-color: rgb(0, 0, 0);
     --dot-size: 1.3px;
     --dot-space: 25px;
@@ -52,6 +80,9 @@
     linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
     linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
     var(--dot-color);
+    a{
+        background-color: #95ecff;
+    }
 }
 
 .banner-melts{
@@ -64,12 +95,14 @@
     linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
     linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
     var(--dot-color);
+    a{
+        background-color: wheat;
+    }
     
 }
 
 .banner-knits{
-    background-color: #ee7ab0;
-    --dot-bg: #e7b3cb;
+    --dot-bg: #f4e0ea;
     --dot-color: rgb(0, 0, 0);
     --dot-size: 1.3px;
     --dot-space: 25px;
@@ -77,6 +110,9 @@
     linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
     linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
     var(--dot-color);
+    a{
+        background-color: #f4e0ea;
+    }
 }
 
 .banner-img{
@@ -134,21 +170,23 @@
         border-left: 0px;
         border-right: 0px;
         border-bottom: 0px;
-        p{
+        a{
             display: grid;
+            color: #000000;
             font-weight: 200;
             justify-content: center;
-            padding-top: 0.5px;
+            padding-top: 1px;
             text-decoration: underline;
             letter-spacing: 0.05rem;
-            transition: all 0.3s 0.1s ease-in-out;
+            transition: all 0.5s 0.2s cubic-bezier(.79,.14,.15,.86);
         }
-        p:hover{
+        a:hover{
             letter-spacing: 0.3rem;
         }
         small{
             display: grid;
             font-weight: 200;
+            font-size: large;
             letter-spacing: 0.1rem;
             justify-content: center;
         }

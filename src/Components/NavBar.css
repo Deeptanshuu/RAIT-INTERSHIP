@@ -4,16 +4,20 @@
     justify-content: space-around;
     max-height: 25px;
     padding: 0.5rem;
+    color: black;
     font-size: large;
     font-weight: 200;
     letter-spacing: 0.15em;
     transition: all 0.3s 0.1s cubic-bezier(.79,.14,.15,.86);
-  }
-  
-  .mantra:hover{
+    a{
+        color: black;
+    }
+}
+
+.mantra:hover{
       font-weight: 500;
       letter-spacing: 0.3em;
-  } 
+} 
 
 .nav-links{
     display: flex;
@@ -45,13 +49,22 @@ ul.nav-links{
 .logo-container{
     display: grid;
     justify-items: center;
+    --dot-bg: #ffffff;
+    --dot-color: rgb(0, 0, 0);
+    --dot-size: 1.2px;
+    --dot-space: 25px;
+    background:
+    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
 }
 
 .nav-icons{
     display: flex;
     justify-self: right;
-    justify-content: space-around;
     line-height: normal;
+    margin-right: 50px;
+    padding: 10px;
     a{
         color: black;
         transition: colour;

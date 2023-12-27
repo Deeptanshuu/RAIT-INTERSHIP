@@ -1,5 +1,6 @@
 import React from 'react';
 import './Login.css';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
@@ -10,7 +11,7 @@ const Login = () => {
           <form className="form-container ">
           <h1 className='text-center fw-lighter' >LOGIN</h1>
           <div className="register-container">
-            <h6>Don't Have an account ? <a href='/register'>Sign up here.</a></h6>
+            <h6>Don't Have an account ? <Link to='/register'>Sign up here.</Link></h6>
             </div>
               <div className="form-group fw-bold">
                 <label htmlFor="email">Email address</label>
@@ -34,7 +35,7 @@ const Login = () => {
                 />
               </div>
               <div className="forgot-container">
-            <h6><a href='/forgot'>Forgot your password ?</a></h6>
+            <h6><Link to='/forgot'>Forgot your password ?</Link></h6>
             </div>
 
               <div className="d-grid  col-8 mx-auto">

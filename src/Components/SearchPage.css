@@ -1,0 +1,47 @@
+.search-container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5em;
+    h1{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        font-size: larger;
+    }
+}
+
+.search-box-outer{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.search-box{
+    display: flex;
+    form{
+        display: flex;
+        justify-content:flex-end;
+    }
+    input{
+        color: black;
+        border-radius: 0%;
+        border-right: 0px;
+    }
+    input:focus {
+        outline:none;
+    }
+    .btn{
+        border-radius: 0%;
+    }
+}
+
+.product-grid-header{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-size: 400;
+    font-weight: lighter;
+    border: 1px black solid;
+}

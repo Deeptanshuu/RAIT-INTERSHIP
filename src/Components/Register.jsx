@@ -1,5 +1,6 @@
 import React from 'react'
 import './Register.css'
+import { Link } from 'react-router-dom'
 
 const Register = () => {
     return (
@@ -10,7 +11,7 @@ const Register = () => {
               <form className="form-container ">
               <h1 className='text-center fw-lighter' >SIGN UP</h1>
               <div className="register-container">
-              <h6>Already Have an account ? <a href='/login'>Log in here.</a></h6>
+              <h6>Already Have an account ? <Link to='/login'>Log in here.</Link></h6>
                 </div>
                 <div className="form-group fw-bold">
                     <label htmlFor="email">Name</label>
