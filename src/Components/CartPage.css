@@ -30,18 +30,28 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 1px;
     margin-top: 50px;
+    font-weight: 100;
     margin-bottom: 50px;
+    border: 1px black dotted;
+}
+
+.cart-item-header{
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 25px;
+    margin-bottom: 0%;
+    margin-top: 50px;
+    letter-spacing: 0.1em;
 }
 
 .cart-item-details{
     --background-color: aquamarine;
     display: flex;
+    justify-content: flex-start;
     padding: 10px;
-    border: 1px black solid;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
     ul{
         padding: 10px;
         font-size: larger;
@@ -56,12 +66,9 @@
     --background-color: rgb(68, 170, 170);
     display: flex;
     flex-direction: row;
-    justify-self: center;
+    justify-self: flex-end;
     padding: 10px 10px;
-    border: 1px black solid;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
+    letter-spacing: 0.1em;
     P{
         font-size: larger;
         margin-top: 10px; 
@@ -88,34 +95,36 @@
     border-top: 0px;
 }
 
+
 .cart-price{
     background-color: beige;
-    display: flex;
-    flex-direction: column;
     padding: 10px;
-    p{
-        font-size: larger;
-        font-size: 20px;
+    letter-spacing: 0.1em;
+    border: 1px black dotted;
+    table{
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+    tr{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    h5{
+        font-size: large;
         font-weight: lighter;
-        margin-left: 56%;
-        margin-bottom: 0%;
-        h3{
-            display: flex;
-            margin-bottom: 0.5em;
-            font-size: 18px;
-            font-weight: light;
-            justify-content: flex-end;
-        }
-    } 
-
-
+    }
     .btn{
         display: flex;
         justify-content: center;
-        margin-top: 20px;
+        font-size: large;
+        font-weight: lighter;
+        margin-top: 30px;
         margin-bottom: 30px;
-        margin-left: 27.5%;
+        margin-left: 35.5%;
         border-radius: 0%;
         max-width: 350px;
     }
 }
+

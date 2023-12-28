@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import itemsData from './items.json';
-//import { Link } from 'react-router-dom';
 import './Product.css'
 
 const Products = () => {
@@ -29,9 +28,9 @@ const Products = () => {
 
               <div className="product-card-text">         
                 <h3>{item.name}</h3>
-                    <a href={`/showcase?id=${item.id}`} className="view-item-button">
+                    <Link to={`/showcase?id=${item.id}`} className="view-item-button">
                     -View Item-
-                    </a>
+                    </Link>
               </div> 
 
             </div>

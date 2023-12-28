@@ -28,6 +28,7 @@ const CartPage = () => {
 
         <div className="cart-wrapper">
           <div className="cart-list">
+            <div className="cart-item-header">- Invoice -</div>
             {cart.map((item) => (
               <div key={item.id} className="cart-item">
                 <div className="cart-item-details">
@@ -60,18 +61,30 @@ const CartPage = () => {
             <div className="cart-price">
               {cart.length > 0 && (
                 <>
-                  <p>
-                    Subtotal: <h3>₹{calculateTotal()} </h3>
-                  </p>
-                  <p>
-                    Total Tax (10%): <h3>₹{calculateTax()} </h3>
-                  </p>
-                  <p>
-                    Total Shipping (₹100/item) : <h3>₹{calculateShipping()}</h3>
-                  </p>
-                  <p>
-                    Grand Total: <h3>₹{calculateTotalWithTaxAndShipping()}</h3>
-                  </p>
+                  <table>
+                  <td>
+                      <tr><h5>Subtotal :</h5></tr> 
+                      
+                      <tr><h5>Total Tax (10%) :</h5></tr> 
+                        
+                      <tr><h5>Total Shipping (₹100/item) :</h5></tr> 
+
+                      <tr><h5>Grand Total: </h5></tr>
+
+                  </td>
+                  <td>
+
+                    <tr> <h5> ₹{calculateTotal()} </h5> </tr>
+
+                    <tr> <h5> ₹{calculateTax()} </h5> </tr>
+
+                    <tr> <h5> ₹{calculateShipping()} </h5> </tr>
+
+                    <tr> <h5> ₹{calculateTotalWithTaxAndShipping()} </h5> </tr>
+
+                  </td>
+
+                  </table>
                   <button className="btn btn-outline-dark btn-lg">
                     Proceed to Checkout
                   </button>
