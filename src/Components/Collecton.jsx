@@ -68,7 +68,7 @@ const Collecton = () => {
           <Link to="/shop/product?category=knits">-See More-</Link>
         </div>
         <div className="banner-img col-6">
-          <img src="/shop/knits-banner.png" alt="knits-banner" />
+          <Link to="/shop/product?category=knits"><img src="/shop/knits-banner.png" alt="knits-banner" /></Link>
         </div>
       </div>
       <div className="card-container row">

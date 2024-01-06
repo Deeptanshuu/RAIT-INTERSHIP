@@ -28,10 +28,10 @@ const Home = () => {
     <>
       <div className="pic-wrapper row">
         <div className="pic-container basics col-4">
-          <img src="/pic-1.png" alt="pic-1" id="pic-1" className="img" />
+        <Link to="/shop" onClick={handleClick("basics")}><img src="/pic-1.png" alt="pic-1" id="pic-1" className="img" /></Link>
           <div className="button">
             <h3>-BASICS-</h3>
-            <Link to="/shop">
+            <Link to="/shop#baiscs">
               <button className="btn btn-outline-light" onClick={handleClick("basics")}>
                 See More
               </button>
@@ -39,7 +39,7 @@ const Home = () => {
           </div>
         </div>
         <div className="pic-container melts col-4">
-          <img src="/pic-3.png" alt="pic-2" id="pic-3" className="img" />
+          <Link to='/shop' onClick={handleClick("melts")}><img src="/pic-3.png" alt="pic-2" id="pic-3" className="img" /></Link>
           <div className="button">
             <h3>-MELTS-</h3>
             <Link to="/shop">
@@ -50,7 +50,7 @@ const Home = () => {
           </div>
         </div>
         <div className="pic-container kints col-4">
-          <img src="/pic-2.png" alt="pic-2" id="pic-2" className="img" />
+          <Link to='/shop'><img src="/pic-2.png" alt="pic-2" id="pic-2" className="img" /></Link>
           <div className="button">
             <h3>-KINTS-</h3>
             <Link to="/shop">

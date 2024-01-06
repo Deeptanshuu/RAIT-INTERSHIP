@@ -18,10 +18,8 @@
 .button {
   position: absolute;
   font-weight: 300;
-  margin: auto;
   margin-top: 40%;
-  max-width: auto;
-  max-height: auto;
+  margin-right: calc(0.05*img);
   button{
     padding: 5px 50px;
     border-radius: 0%;
@@ -48,14 +46,13 @@
 
 .img {
   max-width: auto;
-  max-height: 90%;
-  padding: 0.5rem;
-  transition: max-height 0.5s 0.2s cubic-bezier(.79,.14,.15,.86);
+  min-height: 600px;
+  transition: all 0.5s 0.2s cubic-bezier(.79,.14,.15,.86);
   z-index: 0;
 }
 
 .img:hover {
-  max-height: 100%;
+  scale: 1.1;
 }
 
 .about {

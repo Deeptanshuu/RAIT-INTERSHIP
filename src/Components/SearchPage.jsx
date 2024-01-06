@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import itemsData from "./items.json"; // Adjust the path as needed
 import './SearchPage.css'
 
@@ -19,7 +19,7 @@ const SearchPage = () => {
     e.preventDefault();
     // Update the URL with the new search term
     navigate(`/search?name=${encodeURIComponent(searchTerm)}`);
-    window.location.reload();
+    //window.location.reload();
   };
 
   // Combine items from all categories
@@ -63,12 +63,12 @@ const SearchPage = () => {
 
               <div className="product-card-text">
                 <h3>{item.name}</h3>
-                <a
-                  href={`/showcase?id=${item.id}`}
+                <Link
+                  to={`/showcase?id=${item.id}`}
                   className="view-item-button"
                 >
                   -View Item-
-                </a>
+                </Link>
               </div>
             </div>
           ))}
@@ -92,7 +92,7 @@ const SearchPage = () => {
               value={searchTerm}
               onChange={handleInputChange}
             />
-            <button type="submit" class="btn btn-outline-dark">
+            <button class="btn btn-outline-dark">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
