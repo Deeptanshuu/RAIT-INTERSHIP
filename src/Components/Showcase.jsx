@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import QuantitySelector from './QuatitySelector';
 import { useCart } from './CartContext';
 import { Link, useLocation } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import itemsData from './items.json';
-import './Showcase.css'
+import './Showcase.css';
 
 
 
@@ -21,10 +23,23 @@ const Showcase = () => {
 
   //console.log('Selected Item:', selectedItem);
 
+  const handleAddToCart = () => {
+    addToCart(selectedItem);
+    toast('😊 Item added to your cart!', {
+      position: "bottom-right",
+      autoClose: 4000, // Set the duration for how long the toast should be displayed (in milliseconds)
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      theme: "dark",
+      progress: undefined,
+    });
+  };
+
   if (!selectedItem) {
     return <div>Item not found!</div>;
   }
-
 
 
   const handleIncrement = () => {
@@ -85,7 +100,7 @@ const Showcase = () => {
           </div>
 
           <div className="add-cart">
-            <button className='btn btn-outline-dark' onClick={() => addToCart(selectedItem)}>Add to Cart</button>
+            <button className={`btn btn-outline-dark ${selectedItem.inStock ? '' : 'disabled'}`} onClick={() => handleAddToCart()}>Add to Cart</button>
           </div>
 
 

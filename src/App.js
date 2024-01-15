@@ -14,6 +14,8 @@ import Product from './Components/Product';
 import Showcase from './Components/Showcase';
 import SearchPage from './Components/SearchPage';
 import CartPage from './Components/CartPage';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -34,6 +36,9 @@ function App() {
         </Routes>
       </Router>
       <Footer/>
+      <ToastContainer
+      limit={5}
+      />
     </CartProvider>
   );
 }

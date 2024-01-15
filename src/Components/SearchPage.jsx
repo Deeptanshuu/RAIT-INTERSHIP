@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { useNavigate, useLocation, Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import itemsData from "./items.json"; // Adjust the path as needed
 import './SearchPage.css'
 
@@ -9,7 +10,7 @@ const SearchPage = () => {
   const searchTermFromUrl = searchParams.get("name") || "";
 
   const [searchTerm, setSearchTerm] = useState(searchTermFromUrl);
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   const handleInputChange = (e) => {
     setSearchTerm(e.target.value);
@@ -18,7 +19,7 @@ const SearchPage = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     // Update the URL with the new search term
-    navigate(`/search?name=${encodeURIComponent(searchTerm)}`);
+    //navigate(`/search?name=${encodeURIComponent(searchTerm)}`);
     //window.location.reload();
   };
 
