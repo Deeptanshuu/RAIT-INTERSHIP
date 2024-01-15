@@ -253,10 +253,9 @@
       var(--dot-color);
     .help-img{
         display: flex;
-        max-width: 314px;
-        max-height: 50vh;
-        border:solid;
-        border-width: 1px;
+        max-width: 240px;
+        max-height: 300px;
+        border:0px;
         justify-content: center;
     }
     .help-text{

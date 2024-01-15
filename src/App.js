@@ -1,4 +1,3 @@
-import './App.css';
 import { BrowserRouter as Router , Routes , Route } from 'react-router-dom';
 import { CartProvider } from './Components/CartContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,6 +15,7 @@ import SearchPage from './Components/SearchPage';
 import CartPage from './Components/CartPage';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './App.css';
 
 function App() {
   return (
@@ -37,7 +37,7 @@ function App() {
       </Router>
       <Footer/>
       <ToastContainer
-      limit={5}
+      limit={3}
       />
     </CartProvider>
   );

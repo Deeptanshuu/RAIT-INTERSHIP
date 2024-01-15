@@ -24,7 +24,11 @@ const Products = () => {
         
             <div className="product-card" id={item.id}>
 
-              <div className="product-card-image"><img src={item.img} alt="product-card-view" /></div>
+              <div className="product-card-image">
+                <Link to={`/showcase?id=${item.id}`}>
+                <img src={item.img} alt="product-card-view" />
+                </Link>
+                </div>
 
               <div className="product-card-text">         
                 <h3>{item.name}</h3>

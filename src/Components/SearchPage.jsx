@@ -59,15 +59,14 @@ const SearchPage = () => {
           {filteredItems.map((item) => (
             <div className="product-card" key={item.id}>
               <div className="product-card-image">
-                <img src={item.img} alt={item.name} />
+                <Link to={`/showcase?id=${item.id}`}>
+                  <img src={item.img} alt={item.name}/>
+                </Link>
               </div>
 
               <div className="product-card-text">
                 <h3>{item.name}</h3>
-                <Link
-                  to={`/showcase?id=${item.id}`}
-                  className="view-item-button"
-                >
+                <Link to={`/showcase?id=${item.id}`} className="view-item-button">
                   -View Item-
                 </Link>
               </div>
