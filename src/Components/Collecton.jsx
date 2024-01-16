@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import './Collection.css'
 
 const Collecton = () => {
+
   return (
     <>
+      <div className="collection-body">
         <div className="head">
             <h1>-Our Collections-</h1>
         </div>
@@ -88,7 +90,7 @@ const Collecton = () => {
       </div>
 
 
-
+      </div>
 
     </>
   );

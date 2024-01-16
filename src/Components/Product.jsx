@@ -31,9 +31,9 @@ const Products = () => {
                 </div>
 
               <div className="product-card-text">         
-                <h3>{item.name}</h3>
+                <h3>- {item.name} -</h3>
                     <Link to={`/showcase?id=${item.id}`} className="view-item-button">
-                    -View Item-
+                    - View Item -
                     </Link>
               </div> 
 

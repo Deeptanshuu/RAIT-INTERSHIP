@@ -3,16 +3,6 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
-  // eslint-disable-next-line
-  const scrollToSection = (sectionId) => {
-    const targetSection = document.getElementById(sectionId);
-    if (targetSection) {
-      window.scrollTo({
-        top: targetSection.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
 
   const handleClick = (sectionId) => {
     return () => {
