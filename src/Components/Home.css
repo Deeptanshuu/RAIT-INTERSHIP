@@ -2,14 +2,13 @@
 .pic-container {
   display: flex;
   position: relative;
-  padding: 0.4vmin;
   justify-content: center;
   overflow: hidden;
 }
 
 .pic-wrapper {
   display: flex;
-  padding: 2rem;
+  padding: 3rem 13rem;
   box-sizing: border-box;
   margin: 0%;
   overflow: hidden;
@@ -18,7 +17,7 @@
 .button {
   position: absolute;
   font-weight: 300;
-  margin-top: 40%;
+  margin-top: 55%;
   pointer-events: none;
   button{
     padding: 5px 50px;
@@ -45,8 +44,7 @@
 }
 
 .img {
-  max-width: auto;
-  min-height: 600px;
+  min-height: 70vh;
   transition: all 0.5s 0.2s cubic-bezier(.79,.14,.15,.86);
 }
 

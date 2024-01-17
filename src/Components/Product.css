@@ -51,6 +51,21 @@
     background-color: #ffffff;
 }
 
+
+.product-status-chip{
+    position: relative;
+    z-index: 3;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.5em;
+    max-width: 100px;
+    h6{
+        font-family: 'Segoe UI Light';
+        font-size: small;
+        text-align: center;
+    }
+}
+
 .product-card-image{
     display: flex;
     align-items: center;

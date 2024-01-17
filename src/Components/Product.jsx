@@ -24,6 +24,11 @@ const Products = () => {
         
             <div className="product-card" id={item.id}>
 
+                <div className="product-status-chip" style={{ opacity: item.inStock ? 0 : 1 }}>
+                      <h6>SOLD OUT</h6>
+                </div>
+
+
               <div className="product-card-image">
                 <Link to={`/showcase?id=${item.id}`}>
                 <img src={item.img} alt="product-card-view" />

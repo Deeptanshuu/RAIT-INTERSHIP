@@ -121,7 +121,7 @@
       "name": "Tsuki Socks",
       "description": "Socks with style. Available in two classic Tsuki colour combinations, with knitted logo details and contrast toes and heels.",
       "price": 599,
-      "inStock": true,
+      "inStock": false,
       "category":"basics"
     },
     {
@@ -145,7 +145,7 @@
       "name": "Striped Scarf",
       "description": "This big and cosy scarf features a stripe design in our classic Tsuki colours. Made out of super soft acrylic to keep you warm all winter long.",
       "price": 599,
-      "inStock": true,
+      "inStock": false,
       "category":"basics"
     }
   ]
