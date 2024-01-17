@@ -1,32 +1,31 @@
 ### Project Setup:
 
 - [x] Organize project structure: Create separate directories for frontend and backend.
-- [ ] Set up MongoDB database and establish a connection with Mongoose.
-- [ ] Create backend models for products and users (if authentication is implemented).
-- [ ] Implement backend routes for product listing, user authentication, cart management, and checkout.
-- [ ] Add middleware for handling CORS, parsing JSON, etc.
-- [ ] Implement CRUD operations for products and users.
-- [ ] Secure the application using authentication middleware (optional).
+- [x] Create backend models for products and users (if authentication is implemented).
+- [x] Implement backend routes for product listing, user authentication, cart management, and checkout.
+- [x] Add middleware for handling CORS, parsing JSON, etc.
+- [x] Implement CRUD operations for products and users.
+- [x] Secure the application using authentication middleware (optional).
 
 ### Frontend Development:
 
-- [ ] Create React components for product listings, shopping cart, authentication, search, and filters.
-- [ ] Implement React Router for navigation between pages.
-- [ ] Set up state management (React Context or Redux) for the shopping cart.
-- [ ] Fetch product data from the backend API.
-- [ ] Implement features such as product search, filtering, and pagination.
-- [ ] Implement user authentication (optional).
+- [x] Create React components for product listings, shopping cart, authentication, search, and filters.
+- [x] Implement React Router for navigation between pages.
+- [x] Set up state management (React Context or Redux) for the shopping cart.
+- [x] Fetch product data from the backend API.
+- [x] Implement features such as product search, filtering, and pagination.
+- [x] Implement user authentication (optional).
 
 ### Shopping Cart Functionality:
 
-- [ ] Create a shopping cart component to display added items and their details.
-- [ ] Implement functionality to add and remove items from the cart.
-- [ ] Display the total price in the cart.
+- [x] Create a shopping cart component to display added items and their details.
+- [x] Implement functionality to add and remove items from the cart.
+- [x] Display the total price in the cart.
 
 ### Product Search and Filtering:
 
-- [ ] Implement search functionality based on keywords.
-- [ ] Add filters for categories, price range, etc.
+- [x] Implement search functionality based on keywords.
+- [x] Add filters for categories, price range, etc.
 
 ### Checkout Process (Optional):
 
@@ -34,11 +33,11 @@
 
 ### Inventory Management (Optional):
 
-- [ ] If implemented, track product availability and update the inventory.
+- [x] If implemented, track product availability and update the inventory.
 
 ### Responsive Design:
 
-- [ ] Ensure the application is responsive using CSS frameworks like Bootstrap or custom media queries.
+- [x] Ensure the application is responsive using CSS frameworks like Bootstrap or custom media queries.
 
 ### Testing:
 
@@ -52,11 +51,11 @@
 ### Deployment:
 
 - [ ] Deploy the backend to a server (e.g., Heroku, AWS).
-- [ ] Deploy the frontend to a static hosting service (e.g., Netlify, Vercel).
+- [x] Deploy the frontend to a static hosting service (e.g., Netlify, Vercel).
 
 ### Demo Video:
 
-- [ ] Create a demo video showcasing key features and functionality.
+- [x] Create a demo video showcasing key features and functionality.
 
 
 
