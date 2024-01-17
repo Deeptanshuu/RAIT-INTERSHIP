@@ -1,6 +1,6 @@
 ### Project Setup:
 
-- [*] Organize project structure: Create separate directories for frontend and backend.
+- [x] Organize project structure: Create separate directories for frontend and backend.
 - [ ] Set up MongoDB database and establish a connection with Mongoose.
 - [ ] Create backend models for products and users (if authentication is implemented).
 - [ ] Implement backend routes for product listing, user authentication, cart management, and checkout.
