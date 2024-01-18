@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
+    <>
+    <div className="dotted-bg">
     <div className="login-container">
       <span class="border border-dark">
 
@@ -48,6 +50,8 @@ const Login = () => {
 
         </span>
       </div>
+      </div>
+      </>
   );
 };
 

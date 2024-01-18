@@ -8,7 +8,7 @@
 
 .pic-wrapper {
   display: flex;
-  padding: 3rem 13rem;
+  padding: 5rem 13rem;
   box-sizing: border-box;
   margin: 0%;
   overflow: hidden;
@@ -53,20 +53,10 @@
 
 }
 
-.about {
-  display: flex;
-  width: 100%;
-  margin: 0%;
-  overflow: hidden;
-  .about-text {
-    display: grid;
-    border: solid;
-    text-align: justify;
-    border-width: 1px;
-    border-right: 0px;
-    --dot-bg: rgb(255, 255, 255);
+.dotted-bg{
+  --dot-bg: rgb(255, 255, 255);
     --dot-color: rgb(0, 0, 0);
-    --dot-size: 1.8px;
+    --dot-size: 1px;
     --dot-space: 25px;
     background: linear-gradient(
           90deg,
@@ -80,6 +70,20 @@
         )
         center / var(--dot-space) var(--dot-space),
       var(--dot-color);
+}
+
+
+.about {
+  display: flex;
+  width: 100%;
+  margin: 0%;
+  overflow: hidden;
+  .about-text {
+    display: grid;
+    border: solid;
+    text-align: justify;
+    border-width: 1px;
+    border-right: 0px;
     h1 {
       display: inline-block;
       background-color: #ffffff49;
@@ -120,22 +124,6 @@
     text-align: justify;
     border-width: 1px;
     border-top: 0px;
-    --dot-bg: rgb(255, 255, 255);
-    --dot-color: rgb(0, 0, 0);
-    --dot-size: 1.8px;
-    --dot-space: 25px;
-    background: linear-gradient(
-          90deg,
-          var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
-          transparent 1%
-        )
-        center / var(--dot-space) var(--dot-space),
-      linear-gradient(
-          var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
-          transparent 1%
-        )
-        center / var(--dot-space) var(--dot-space),
-      var(--dot-color);
     h1 {
       display: inline-block;
       background-color: #ffffff81;
@@ -179,22 +167,6 @@
     border-width: 1px;
     border-right: 0px;
     border-top: 0px;
-    --dot-bg: rgb(255, 255, 255);
-    --dot-color: rgb(0, 0, 0);
-    --dot-size: 1.8px;
-    --dot-space: 25px;
-    background: linear-gradient(
-          90deg,
-          var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
-          transparent 1%
-        )
-        center / var(--dot-space) var(--dot-space),
-      linear-gradient(
-          var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
-          transparent 1%
-        )
-        center / var(--dot-space) var(--dot-space),
-      var(--dot-color);
     h1 {
       display: inline-block;
       background-color: #ffffff80;
@@ -234,27 +206,12 @@
     max-width: auto;
     min-height: 30vh;
     padding: 10vh;
-    --dot-bg: rgb(255, 255, 255);
-    --dot-color: rgb(0, 0, 0);
-    --dot-size: 1.8px;
-    --dot-space: 25px;
-    background: linear-gradient(
-          90deg,
-          var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
-          transparent 1%
-        )
-        center / var(--dot-space) var(--dot-space),
-      linear-gradient(
-          var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
-          transparent 1%
-        )
-        center / var(--dot-space) var(--dot-space),
-      var(--dot-color);
+    
     .help-img{
         display: flex;
         max-width: 240px;
         max-height: 300px;
-        border:0px;
+        border:1px solid black;
         justify-content: center;
         img{
           max-width: 100%;
@@ -265,7 +222,7 @@
         max-width: 500px;
         z-index: 0;
         padding: 5vh;
-        background-color: rgb(245, 222, 179);
+        background-color: 	#f6e0b5;
         border: solid;
         border-width: 1px;
         p{
@@ -274,3 +231,5 @@
         }
     }
 }
+
+

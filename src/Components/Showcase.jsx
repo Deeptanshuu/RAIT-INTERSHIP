@@ -27,15 +27,13 @@ const Showcase = () => {
   const handleAddToCart = () => {
     addToCart(selectedItem);
     toast('Item added to your cart! ✅', {
-      position: "bottom-left",
+      position: "bottom-right",
       autoClose: 3000, // Set the duration for how long the toast should be displayed (in milliseconds)
       hideProgressBar: false,
-      transition: Slide ,
+      transition: Slide,
       closeOnClick: true,
-      pauseOnHover: true,
       draggable: true,
       theme: "light",
-      progress: undefined,
     });
   };
 

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Register = () => {
     return (
+      <div className="dotted-bg">
         <div className="login-container">
           <span class="border border-dark">
     
@@ -52,6 +53,7 @@ const Register = () => {
               </div>
     
             </span>
+          </div>
           </div>
       );
 }

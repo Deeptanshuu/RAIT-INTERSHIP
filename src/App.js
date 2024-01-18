@@ -37,7 +37,7 @@ function App() {
       </Router>
       <Footer/>
       <ToastContainer
-      limit={3}
+      limit={10}
       />
     </CartProvider>
   );
