@@ -66,7 +66,7 @@ function App() {
       {loading ? (
         <LoadingScreen />
       ) : (
-        <Routes>
+        <Routes basename={process.env.PUBLIC_URL}>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
           <Route path='/register' element={<Register/>}></Route>
