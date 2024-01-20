@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5266ea2b-63cc-4a9d-a284-438c8dc3f6d8/deploy-status)](https://app.netlify.com/sites/tsukimarket/deploys)
+
+
 ### Project Setup:
 
 - [ ] Organize project structure: Create separate directories for frontend and backend.
