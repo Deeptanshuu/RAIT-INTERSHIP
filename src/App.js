@@ -1,4 +1,5 @@
 import { BrowserRouter as Router , Routes , Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import { CartProvider } from './Components/CartContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './Components/Login';
@@ -13,16 +14,58 @@ import Product from './Components/Product';
 import Showcase from './Components/Showcase';
 import SearchPage from './Components/SearchPage';
 import CartPage from './Components/CartPage';
+import LoadingScreen from './Components/LoadingScreen';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const images = document.querySelectorAll('img');
+    const imageCount = images.length;
+
+    let loadedCount = 0;
+
+    const handleImageLoad = () => {
+      loadedCount++;
+      if (loadedCount === imageCount) {
+        // Simulate a delay of 2000 milliseconds (2 seconds)
+        setTimeout(() => {
+          setLoading(false);
+        }, 500);
+      }
+    };
+
+    images.forEach((image) => {
+      if (image.complete) {
+        handleImageLoad();
+      } else {
+        image.addEventListener('load', handleImageLoad);
+      }
+    });
+
+    // Cleanup event listeners
+    return () => {
+      images.forEach((image) => {
+        image.removeEventListener('load', handleImageLoad);
+      });
+    };
+  }, []); // Empty dependency array to run the effect only once
+
+
+
+
   return (
     <CartProvider>
       <Router>
       <Header/>
       <NavBar/>
+      {loading ? (
+        <LoadingScreen />
+      ) : (
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
@@ -34,6 +77,7 @@ function App() {
           <Route path='/cart' element={<CartPage/>}></Route>
           <Route path='/search' element={<SearchPage/>}></Route>
         </Routes>
+        )}
       </Router>
       <Footer/>
       <ToastContainer
