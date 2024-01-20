@@ -22,7 +22,7 @@ const Home = () => {
         <Link to="/shop" onClick={handleClick("basics")}><img src="/pic-1.png" alt="pic-1" id="pic-1" className="img" /></Link>
           <div className="button">
             <h3>-BASICS-</h3>
-            <Link to="/shop#baiscs">
+            <Link to="/shop">
               <button className="btn btn-outline-light" onClick={handleClick("basics")}>
                 See More
               </button>
@@ -41,7 +41,7 @@ const Home = () => {
           </div>
         </div>
         <div className="pic-container kints col-4">
-          <Link to='/shop'><img src="/pic-2.png" alt="pic-2" id="pic-2" className="img" /></Link>
+          <Link to='/shop' onClick={handleClick("kints")}><img src="/pic-2.png" alt="pic-2" id="pic-2" className="img" /></Link>
           <div className="button">
             <h3>-KINTS-</h3>
             <Link to="/shop">
