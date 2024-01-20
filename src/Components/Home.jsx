@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import "./Home.css";
 
 const Home = () => {
@@ -19,7 +21,7 @@ const Home = () => {
     <div className="dotted-bg">
       <div className="pic-wrapper row">
         <div className="pic-container basics col-4">
-        <Link to="/shop" onClick={handleClick("basics")}><img src="/pic-1.png" alt="pic-1" id="pic-1" className="img" /></Link>
+        <Link to="/shop" onClick={handleClick("basics")}><LazyLoadImage effect="blur" src="/pic-1.png" alt="pic-1" id="pic-1" className="img" loading='lazy'/></Link>
           <div className="button">
             <h3>-BASICS-</h3>
             <Link to="/shop">
@@ -30,7 +32,7 @@ const Home = () => {
           </div>
         </div>
         <div className="pic-container melts col-4">
-          <Link to='/shop' onClick={handleClick("melts")}><img src="/pic-3.png" alt="pic-2" id="pic-3" className="img" /></Link>
+          <Link to='/shop' onClick={handleClick("melts")}><LazyLoadImage effect="blur" src="/pic-3.png" alt="pic-2" id="pic-3" className="img" loading='lazy'/></Link>
           <div className="button">
             <h3>-MELTS-</h3>
             <Link to="/shop">
@@ -41,7 +43,7 @@ const Home = () => {
           </div>
         </div>
         <div className="pic-container kints col-4">
-          <Link to='/shop' onClick={handleClick("kints")}><img src="/pic-2.png" alt="pic-2" id="pic-2" className="img" /></Link>
+          <Link to='/shop' onClick={handleClick("kints")}><LazyLoadImage effect="blur" src="/pic-2.png" alt="pic-2" id="pic-2" className="img" loading='lazy'/></Link>
           <div className="button">
             <h3>-KINTS-</h3>
             <Link to="/shop">
@@ -68,13 +70,13 @@ const Home = () => {
             </small>
           </div>
           <div className="about-image col-6">
-            <img src="/about-pic.png" alt="about-img" />
+            <LazyLoadImage effect="blur" src="/about-pic.png" alt="about-img" loading='lazy'/>
           </div>
         </div>
 
         <div className="craft row">
           <div className="craft-img col-6">
-            <img src="/carft.png" alt="craftsmanship" />
+            <LazyLoadImage effect="blur" src="/carft.png" alt="craftsmanship" loading='lazy'/>
           </div>
           <div className="craft-text col-6">
             <h1>-CRAFTSMANSHIP-</h1>
@@ -101,7 +103,7 @@ const Home = () => {
             </small>
           </div>
           <div className="join-img col-6">
-            <img src="/join.png" alt="join-img" />
+            <LazyLoadImage effect="blur" src="/join.png" alt="join-img" loading='lazy'/>
           </div>
         </div>
 
@@ -115,7 +117,7 @@ const Home = () => {
               </p>
             </div>
             <div className="help-img">
-              <img src="/bottom.png" alt="" />
+              <LazyLoadImage effect="blur" src="/bottom.png" alt="" loading='lazy'/>
             </div>
           </div>
         </div>

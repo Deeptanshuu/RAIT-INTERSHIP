@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import itemsData from './items.json';
 import './Product.css'
 
@@ -30,13 +32,13 @@ const Products = () => {
 
 
               <div className="product-card-image">
-                <Link to={`/showcase?id=${item.id}`}>
-                <img src={item.img} alt="product-card-view" />
-                </Link>
+                {<Link to={`/showcase?id=${item.id}`}>
+                <LazyLoadImage effect="blur" src={item.img} alt="product-card-view" loading='lazy' />
+                </Link> }
                 </div>
 
               <div className="product-card-text">         
-                <h3>- {item.name} -</h3>
+                <h3>{ item.name }</h3>
                     <Link to={`/showcase?id=${item.id}`} className="view-item-button">
                     - View Item -
                     </Link>

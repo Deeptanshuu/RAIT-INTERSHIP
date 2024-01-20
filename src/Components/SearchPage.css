@@ -18,6 +18,24 @@
     padding: 1em;
 }
 
+.defualt-search-page{
+    p{
+        display: flex;
+        justify-content: center;
+        padding: 5rem;
+        font-size: larger;
+    } 
+}
+
+.no-item-page{
+    p{
+        display: flex;
+        justify-content: center;
+        padding: 5rem;
+        font-size: larger;
+    }
+}
+
 .search-box{
     display: flex;
     form{

@@ -17,8 +17,9 @@
 
 .button {
   position: absolute;
+  text-anchor:middle;
   font-weight: 300;
-  margin-top: 55%;
+  margin-top: calc(0.45*70vh);
   pointer-events: none;
 
   button {

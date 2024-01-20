@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 //import { useNavigate } from "react-router-dom";
 import itemsData from "./items.json"; // Adjust the path as needed
 import './SearchPage.css'
@@ -40,15 +42,19 @@ const SearchPage = () => {
   const renderClothingDisplay = () => {
     if (filteredItems.length === 0 && searchTerm !== "") {
       return (
-        <div className="product-grid-header">
-          <p>No matching items found.😔</p>
+        <div className="dotted-bg">
+          <div className="product-grid-header no-item-page">
+            <p>No matching items found.😔</p>
+          </div>
         </div>
       );
     }
     if (searchTerm === "") {
       return (
-        <div className="product-grid-header">
-          <p>Search for products on our site.</p>
+        <div className="dotted-bg">
+          <div className="product-grid-header defualt-search-page">
+            <p>Search for products on our site.🔍</p>
+          </div>
         </div>
       );
     }
@@ -65,7 +71,7 @@ const SearchPage = () => {
               <div className="product-card-image">
 
                 <Link to={`/showcase?id=${item.id}`}>
-                  <img src={item.img} alt={item.name}/>
+                  <LazyLoadImage effect="blur" src={item.img} alt={item.name}/>
                 </Link>
 
               </div>

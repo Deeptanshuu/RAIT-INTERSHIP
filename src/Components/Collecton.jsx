@@ -1,4 +1,6 @@
 import React from "react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Link } from "react-router-dom";
 import './Collection.css'
 
@@ -17,20 +19,20 @@ const Collecton = () => {
           <Link to="/shop/product?category=basics">-See More-</Link>
           </div>
           <div className="banner-img col-6">
-            <img src="/shop/basic-banner.png" alt="basic-banner" />
+            <LazyLoadImage effect="blur" src="/shop/basic-banner.png" alt="basic-banner" loading='lazy' />
           </div>
         </div>
         <div className="card-container row">
             <div className="card col-4">
-                <div className="card-img"><Link to="/showcase?id=b-2"><img src="/shop/k-cor-cap.png" alt="img for card" /></Link></div>
+                <div className="card-img"><Link to="/showcase?id=b-2"><LazyLoadImage effect="blur" src="/shop/k-cor-cap.png" alt="img for card" loading='lazy'/></Link></div>
                 <div className="card-text"><small>Corduroy Tsuki Cap</small><Link to="/showcase?id=b-2">VIEW ITEM</Link></div>
             </div>
             <div className="card col-4">
-            <div className="card-img"><Link to="/showcase?id=b-4"><img src="/shop/basic-2.png" alt="img for card" /></Link></div>
+            <div className="card-img"><Link to="/showcase?id=b-4"><LazyLoadImage effect="blur" src="/shop/basic-2.png" alt="img for card" loading='lazy'/></Link></div>
             <div className="card-text"><small>夕焼け Sunset Glow Sweatshirt</small><Link to="/showcase?id=b-4">VIEW ITEM</Link></div>
             </div>
             <div className="card col-4">
-            <div className="card-img"><Link to="/showcase?id=b-1"><img src="/shop/basic-3.png" alt="img for card" /></Link></div>
+            <div className="card-img"><Link to="/showcase?id=b-1"><LazyLoadImage effect="blur" src="/shop/basic-3.png" alt="img for card" loading='lazy'/></Link></div>
             <div className="card-text"><small>Embroidered Logo T-shirt</small><Link to="/showcase?id=b-1">VIEW ITEM</Link></div>
             </div>
         </div>
@@ -44,23 +46,23 @@ const Collecton = () => {
         <Link to="/shop/product?category=melts">-See More-</Link>
         </div>
         <div className="banner-img col-6">
-          <img src="/shop/melts-banner.png" alt="melts-banner" />
+          <img src="/shop/melts-banner.png" alt="melts-banner" loading='lazy'/>
         </div>
       </div>
       <div className="card-container row">
             <div className="card col-4">
-                <div className="card-img"><Link to="/showcase?id=m-1"><img src="/shop/melt-sweat.png" alt="img for card" /></Link></div>
+                <div className="card-img"><Link to="/showcase?id=m-1"><LazyLoadImage effect="blur"src="/shop/melt-sweat.png" alt="img for card" loading='lazy' /></Link></div>
                 <div className="card-text"><small>Melted Sweatshirt</small><Link to="/showcase?id=m-1">VIEW ITEM</Link></div>
             </div>
             <div className="card col-4">
             <div className="product-status-chip" style={{ opacity: 1 }}>
                       <h6>SOLD OUT</h6>
                 </div>
-            <div className="card-img"><Link to="/showcase?id=m-2"><img src="/shop/melt-pants.png" alt="img for card" /></Link></div>
+            <div className="card-img"><Link to="/showcase?id=m-2"><LazyLoadImage effect="blur" src="/shop/melt-pants.png" alt="img for card" loading='lazy'/></Link></div>
             <div className="card-text"><small>Melted Sweatpants</small><Link to="/showcase?id=m-2">VIEW ITEM</Link></div>
             </div>
             <div className="card col-4">
-            <div className="card-img"><Link to="/showcase?id=m-4"><img src="/shop/melt-socks.png" alt="img for card" /></Link></div>
+            <div className="card-img"><Link to="/showcase?id=m-4"><LazyLoadImage effect="blur" src="/shop/melt-socks.png" alt="img for card" loading='lazy' /></Link></div>
             <div className="card-text"><small>Melted Socks</small><Link to="/showcase?id=m-4">VIEW ITEM</Link></div>
             </div>
         </div>
@@ -73,7 +75,7 @@ const Collecton = () => {
           <Link to="/shop/product?category=knits">-See More-</Link>
         </div>
         <div className="banner-img col-6">
-          <Link to="/shop/product?category=knits"><img src="/shop/knits-banner.png" alt="knits-banner" /></Link>
+          <Link to="/shop/product?category=knits"><LazyLoadImage effect="blur" src="/shop/knits-banner.png" alt="knits-banner" loading='lazy'/></Link>
         </div>
       </div>
       <div className="card-container row">
@@ -81,21 +83,21 @@ const Collecton = () => {
                 <div className="product-status-chip" style={{ opacity: 1 }}>
                       <h6>SOLD OUT</h6>
                 </div>
-                <div className="card-img"><Link to="/showcase?id=k-3"><img src="/shop/k-beanie.png" alt="img for card" /></Link></div>
+                <div className="card-img"><Link to="/showcase?id=k-3"><LazyLoadImage effect="blur" src="/shop/k-beanie.png" alt="img for card" loading='lazy'/></Link></div>
                 <div className="card-text"><small>Mischief Beanie</small><Link to="/showcase?id=k-3">VIEW ITEM</Link></div>
             </div>
             <div className="card col-4">
             <div className="product-status-chip" style={{ opacity: 1 }}>
                       <h6>SOLD OUT</h6>
                 </div>
-            <div className="card-img"><Link to="/showcase?id=k-1"><img src="/shop/knits-2.png" alt="img for card" /></Link></div>
+            <div className="card-img"><Link to="/showcase?id=k-1"><LazyLoadImage effect="blur" src="/shop/knits-2.png" alt="img for card" loading='lazy'/></Link></div>
                 <div className="card-text"><small>Tsuki すき Knit Sweater</small><Link to="/showcase?id=k-1">VIEW ITEM</Link></div>
             </div>
             <div className="card col-4">
             <div className="product-status-chip" style={{ opacity: 1 }}>
                       <h6>SOLD OUT</h6>
                 </div>
-            <div className="card-img"><Link to="/showcase?id=k-2"><img src="/shop/knits-3.png" alt="img for card" /></Link></div>
+            <div className="card-img"><Link to="/showcase?id=k-2"><img src="/shop/knits-3.png" alt="img for card" loading='lazy'/></Link></div>
                 <div className="card-text"><small>楽しい Tanoshii / 悲しみ Kanashimi Beanies</small><Link to="/showcase?id=k-2">VIEW ITEM</Link></div>
             </div>
         </div>
