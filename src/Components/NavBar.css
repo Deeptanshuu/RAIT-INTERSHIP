@@ -2,8 +2,7 @@
     display: flex;
     position: relative;
     justify-content: space-around;
-    max-height: 25px;
-    padding: 0.5rem;
+    padding: 0.05em;
     color: black;
     font-size: large;
     font-weight: 200;
@@ -61,16 +60,18 @@ ul.nav-links{
 
 .nav-icons{
     display: flex;
+    height: 55px;
+    width: auto;
     justify-self: right;
     line-height: normal;
-    margin-right: 50px;
+    margin-right: 2rem;
     padding: 10px;
     a{
         color: black;
         transition: colour;
     }
     a:hover{
-        color: #cac8c8;
+        color: #797979;
     }
     svg{
         margin: 0.5rem;
