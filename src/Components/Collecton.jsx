@@ -19,7 +19,7 @@ const Collecton = () => {
           <Link to="/shop/product?category=basics">-See More-</Link>
           </div>
           <div className="banner-img col-6">
-            <LazyLoadImage effect="blur" src="/shop/basic-banner.png" alt="basic-banner" loading='lazy' />
+            <img src="/shop/basic-banner.png" alt="basic-banner" decoding="asycn" fetchpriority="high"/>
           </div>
         </div>
         <div className="card-container row">

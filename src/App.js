@@ -2,7 +2,6 @@ import { BrowserRouter as Router , Routes , Route } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import { CartProvider } from './Components/CartContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LoadingScreen from './Components/LoadingScreen';
 import Login from './Components/Login';
 import NavBar from './Components/NavBar';
 import Home from './Components/Home';
@@ -15,6 +14,7 @@ import Product from './Components/Product';
 import Showcase from './Components/Showcase';
 import SearchPage from './Components/SearchPage';
 import CartPage from './Components/CartPage';
+import LoadingScreen from './Components/LoadingScreen';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
@@ -35,9 +35,9 @@ function App() {
       loadedCount++;
       if (loadedCount === imageCount) {
         // Simulate a delay of 500 milliseconds
-        setTimeout(() => {
+        //setTimeout(() => {
           setLoading(false);
-        }, 600);
+        //}, 600);
       }
     };
 

@@ -10,6 +10,7 @@
 .pic-container {
   display: flex;
   min-height: 70vh;
+  max-height: 500px;
   position: relative;
   justify-content: center;
 }
@@ -49,9 +50,8 @@
 }
 
 .img {
-  height: 70vh;
-  width: auto;
-  transition: all 0.3s 0.05s cubic-bezier(.79, .14, .15, .86);
+  min-height: 650px;
+  transition: all 0.25s 0.2s cubic-bezier(.17,.67,.83,.67);
 }
 
 .img:hover{
