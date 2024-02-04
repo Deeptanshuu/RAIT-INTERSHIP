@@ -37,7 +37,7 @@ const Login = () => {
                 />
               </div>
               <div className="forgot-container">
-            <h6><Link to='/forgot'>Forgot your password ?</Link></h6>
+            <h6><Link to='/'>Forgot your password ?</Link></h6>
             </div>
 
               <div className="d-grid  col-8 mx-auto">

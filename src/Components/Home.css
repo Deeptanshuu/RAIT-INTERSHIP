@@ -51,7 +51,7 @@
 
 .img {
   min-height: 650px;
-  transition: all 0.25s 0.2s cubic-bezier(.17,.67,.83,.67);
+  transition: all 0.25s 0.05s cubic-bezier(.17,.67,.83,.67);
 }
 
 .img:hover{

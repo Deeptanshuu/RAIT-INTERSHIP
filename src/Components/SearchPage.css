@@ -63,3 +63,23 @@
     font-weight: lighter;
     border: 1px black solid;
 }
+
+.quick-view{
+    /*View product.css for hover child of this div*/
+    display: grid;
+    background-color:#ace5ee;
+    position: absolute;
+    z-index: 3;
+    margin-top: 0%;
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px black solid;
+    h1{
+        letter-spacing: 0.15em;
+        font-weight: 100;
+        font-size: large;
+    }
+}
+

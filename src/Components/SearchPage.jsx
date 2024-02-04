@@ -32,8 +32,7 @@ const SearchPage = () => {
     ...itemsData.basics,
   ];
 
-  // Perform search logic based on your requirements
-  // For simplicity, let's assume you want to filter by item name
+
   const filteredItems = allItems.filter((item) =>
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -69,7 +68,6 @@ const SearchPage = () => {
                       <h6>SOLD OUT</h6>
                 </div>
               <div className="product-card-image">
-
                 <Link to={`/showcase?id=${item.id}`}>
                   <LazyLoadImage effect="blur" src={item.img} alt={item.name}/>
                 </Link>
@@ -77,9 +75,12 @@ const SearchPage = () => {
               </div>
 
               <div className="product-card-text">
+                <div className="quick-view">
+                      <h1>QUICK VIEW</h1>
+                </div>
                 <h3>{item.name}</h3>
                 <Link to={`/showcase?id=${item.id}`} className="view-item-button">
-                  -View Item-
+                  -See More-
                 </Link>
               </div>
             </div>

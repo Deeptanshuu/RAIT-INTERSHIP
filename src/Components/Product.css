@@ -68,6 +68,8 @@
 
 .product-card-image{
     display: flex;
+    z-index: 1;
+    position: relative;
     align-items: center;
     padding-left: 13%;
     max-height: calc(0.88 * 690px);
@@ -79,8 +81,13 @@
         max-height: calc(0.88 * 690px);
         transition: all 0.1s ease-in-out;
     }
-    img:hover{
-        scale: 1.1;
+}
+
+.product-card:hover{
+    .quick-view{
+        margin-bottom: 21%;
+        opacity: 1;
+        transition: all 0.4s ease-in-out;
     }
 }
 
@@ -88,6 +95,7 @@
 
 .product-card-text{
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     text-align: center;
