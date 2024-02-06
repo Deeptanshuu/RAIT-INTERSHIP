@@ -85,17 +85,20 @@
 
 .product-card:hover{
     .quick-view{
-        margin-bottom: 21%;
+        bottom: 82px;      
         opacity: 1;
-        transition: all 0.4s ease-in-out;
+        transition: opacity .2s ease-in-out,
+                    bottom .2s ease-in-out;
     }
 }
+
 
 
 
 .product-card-text{
     display: flex;
     position: relative;
+    z-index: 5;
     flex-direction: column;
     justify-content: center;
     text-align: center;

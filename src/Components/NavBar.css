@@ -14,9 +14,16 @@
 }
 
 .mantra:hover{
-      font-weight: 500;
-      letter-spacing: 0.3em;
+    font-weight: 500;
+    letter-spacing: 0.3em;
 } 
+
+.logo-container:hover{
+    .mantra{
+        font-weight: 500;
+        letter-spacing: 0.3em;
+    } 
+}
 
 .nav-links{
     display: flex;
@@ -41,6 +48,7 @@ ul.nav-links{
     }
     li:hover{
         color: #b1a2a2;
+        scale: 1.1;
     }
 }
 
