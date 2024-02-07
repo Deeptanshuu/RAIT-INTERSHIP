@@ -37,7 +37,7 @@ function App() {
         // Simulate a delay of 500 milliseconds
         //setTimeout(() => {
           setLoading(false);
-        //}, 600);
+        //}, 6001);
       }
     };
 
