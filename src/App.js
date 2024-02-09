@@ -2,7 +2,7 @@ import { BrowserRouter as Router , Routes , Route } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import { CartProvider } from './Components/CartContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Login from './Components/Login';
 import NavBar from './Components/NavBar';
 import Home from './Components/Home';
