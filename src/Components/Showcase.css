@@ -12,25 +12,19 @@
 
 .dropdown{
     .btn{
-        border-radius: 0%;
+        border-radius: 0px;
         min-width: calc(0.5*50vw);
-    }
+    } 
     .dropdown-menu.show{
-        ul{
-            display: flex;
-            padding: 0px;
-            border: 1px black solid;
-            border-radius: 0px;
-        }
+        border-radius: 0px;
+        border: 1px black solid;
         button{
-
+            padding: 0.5rem;
             min-width: calc(0.5*50vw);
         }
-        .dropdown-item{
-            button{
-                border-radius: 0%;
-            }
-            
+        button:hover{
+            background-color: rgb(0, 0, 0);
+            color: #ffffff;
         }
     }
 }
@@ -122,10 +116,23 @@
     max-width: calc(0.15*50vw);
     max-height: 80vh;
     padding: 0.5em;
-    gap: 5px;
+    margin: 20px;
+    gap: 10px;
     img{
+        max-width: 100%;
+        max-height: 100%;
         border: 1px black solid;
         object-fit: cover;
+    }
+}
+
+.img-list{
+    button{
+        background: none; /* Remove background color */
+        border: none; /* Remove border */
+        padding: 0; /* Remove padding */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        outline: none;
     }
 }
 
@@ -133,24 +140,33 @@
     display: flex;
     justify-content: center;
     background-color: #ffffff;
-    padding: 0%;
-    max-width: 50vw;
-    max-height: 90vh;
-    img{
-        max-width: 100%;
-        max-height: 100%;
-    }
+    padding: 1.5em;
+    min-height: 80vh;
+    min-width: 50vw;
 }
 
 .footer-showcase{
-    text-transform: uppercase;
-    text-align: center;
-    padding: 1rem 0px;
+    display: flex;
+    min-width: 100vw;
+    padding: 1rem;
     letter-spacing: 0.1em;
-    border: 0.5px solid #000000;
-    border-bottom: 0px;
+    border-top: 0.5px solid #000000;
+    transition: all 0.2s ease-in-out;
     a{
+        min-height: 100%;
+        min-width: 100%;
+    }
+    p{
+        margin-left:44vw;
+        font-size: larger;
         color: #000000;
+    }
+}
+
+.footer-showcase:hover{
+    background-color: #000000;
+    p{
+        color: #ffffff;
     }
 }
 
@@ -172,3 +188,11 @@
         padding: 10px 40px;
     }
 }
+
+.magnify-image{
+    display: flex;
+    padding: 2rem;
+
+}
+
+

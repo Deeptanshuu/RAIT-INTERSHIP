@@ -87,9 +87,7 @@ const Collecton = () => {
                 <div className="card-text"><small>Mischief Beanie</small><Link to="/showcase?id=k-3">VIEW ITEM</Link></div>
             </div>
             <div className="card col-4">
-            <div className="product-status-chip" style={{ opacity: 1 }}>
-                      <h6>SOLD OUT</h6>
-                </div>
+
             <div className="card-img"><Link to="/showcase?id=k-1"><LazyLoadImage effect="blur" src="/shop/knits-2.png" alt="img for card" loading='lazy'/></Link></div>
                 <div className="card-text"><small>Tsuki すき Knit Sweater</small><Link to="/showcase?id=k-1">VIEW ITEM</Link></div>
             </div>
