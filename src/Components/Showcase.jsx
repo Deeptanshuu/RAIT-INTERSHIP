@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {GlassMagnifier} from "react-image-magnifiers";
+import { GlassMagnifier } from "react-image-magnifiers";
 import QuantitySelector from "./QuatitySelector";
 import { useCart } from "./CartContext";
 import { Link, useLocation } from "react-router-dom";
@@ -16,16 +16,12 @@ const Showcase = () => {
   const params = new URLSearchParams(location.search);
   const id = params.get("id");
 
-  //console.log('Selected ID:', id);
   const allItems = Object.values(itemsData).flatMap((category) => category);
-
   const selectedItem = allItems.find((item) => item.id === id);
 
-  //console.log('Selected Item:', selectedItem);
-  const [mainImg, setMainImg] = useState(selectedItem.img);
 
-  // eslint-disable-next-line
-  const OnClick = (imgSrc) => {
+  const [mainImg, setMainImg] = useState(selectedItem.img);
+  const handleImageClick = (imgSrc) => {
     setMainImg(imgSrc);
   };
 
@@ -33,7 +29,7 @@ const Showcase = () => {
     addToCart(selectedItem);
     toast("Item added to your cart! ✅", {
       position: "bottom-right",
-      autoClose: 3000, // Set the duration for how long the toast should be displayed (in milliseconds)
+      autoClose: 3000,
       hideProgressBar: false,
       transition: Slide,
       closeOnClick: true,
@@ -65,43 +61,31 @@ const Showcase = () => {
       <div className="showcase-wrapper row" key={selectedItem.id}>
         <div className="showcase-img col-6 z-3">
           <div className="showcase-img-list-icons">
-            <div className="img-list">
-              <button
-                className="img-list-button"
-                onClick={() => setMainImg(selectedItem.img2)}
-              >
-                <img src={selectedItem.img2} alt="showcase-img-2" />
-              </button>
-            </div>
-
-            <div className="img-list">
-              <button
-                className="img-list-button"
-                onClick={() => setMainImg(selectedItem.img3)}
-              >
-                <img src={selectedItem.img3} alt="showcase-img-3" />
-              </button>
-            </div>
-
-            <div className="img-list">
-              <button
-                className="img-list-button"
-                onClick={() => setMainImg(selectedItem.img4)}
-              >
-                <img src={selectedItem.img4} alt="showcase-img-4" />
-              </button>
-            </div>
+            {["img2", "img3", "img4"].map((imgKey) => (
+              <div className="img-list" key={imgKey}>
+                <button
+                  className="img-list-button"
+                  onClick={() => handleImageClick(selectedItem[imgKey])}
+                >
+                  <img src={selectedItem[imgKey]} alt={`showcase-img-${imgKey}`} />
+                </button>
+              </div>
+            ))}
           </div>
 
+          <div className="magnify-image-container">
             <div className="magnify-image">
             <GlassMagnifier
               imageSrc={mainImg}
               imageAlt="showcase-img"
-              magnifierSize ="50%"
-              magnifierBorderColor= "rgba(0, 0, 0)"
-              magnifierBorderSize= "1"
+              magnifierSize="80%"
+              magnifierBorderColor="rgba(0, 0, 0)"
+              magnifierBorderSize="1"
             />
             </div>
+            <p>made with love, <br></br>from tsuki ❤️</p>
+            
+          </div>
         </div>
 
         <div className="showcase-text col-6">

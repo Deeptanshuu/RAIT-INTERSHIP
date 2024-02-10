@@ -49,6 +49,7 @@ const Home = () => {
                 {" "}
                 <img
                   rel="preload"
+                  as="image"
                   fetchpriority="high"
                   src="/pic-1.png"
                   alt="pic-1"
@@ -77,6 +78,7 @@ const Home = () => {
             <Link to="/shop" onClick={handleClick("melts")}>
               <img
                 rel="preload"
+                as="image"
                 fetchpriority="high"
                 src="/pic-3.png"
                 alt="pic-2"
@@ -104,6 +106,7 @@ const Home = () => {
               <img
                 src="/pic-2.png"
                 rel="preload"
+                as="image"
                 fetchpriority="high"
                 alt="pic-2"
                 id="pic-2"

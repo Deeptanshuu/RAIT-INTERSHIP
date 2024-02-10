@@ -7,25 +7,26 @@
     font-size: large;
     font-weight: 200;
     letter-spacing: 0.15em;
-    transition: all 0.3s 0.1s cubic-bezier(.79,.14,.15,.86);
-    a{
+    transition: all 0.3s 0.1s cubic-bezier(.79, .14, .15, .86);
+
+    a {
         color: black;
     }
 }
 
-.mantra:hover{
+.mantra:hover {
     font-weight: 500;
     letter-spacing: 0.3em;
-} 
-
-.logo-container:hover{
-    .mantra{
-        font-weight: 500;
-        letter-spacing: 0.3em;
-    } 
 }
 
-.nav-links{
+.logo-container:hover {
+    .mantra {
+        font-weight: 500;
+        letter-spacing: 0.3em;
+    }
+}
+
+.nav-links {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -36,24 +37,25 @@
 }
 
 
-ul.nav-links{
-    display:flex;
-    justify-content:space-around;
+ul.nav-links {
+    display: flex;
+    justify-content: space-around;
     list-style: none;
+
     li {
         color: rgba(0, 0, 0, 0.75);
         font-size: 1em;
         font-weight: 500;
         transition: all 0.3s 0.1s ease-in-out;
     }
-    li:hover{
+
+    li:hover {
         color: #b1a2a2;
-        scale: 1.1;
     }
 }
 
 
-.logo-container{
+.logo-container {
     display: grid;
     justify-items: center;
     --dot-bg: #ffffff;
@@ -61,12 +63,12 @@ ul.nav-links{
     --dot-size: 1.2px;
     --dot-space: 25px;
     background:
-    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-    var(--dot-color);
+        linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        var(--dot-color);
 }
 
-.nav-icons{
+.nav-icons {
     display: flex;
     height: 55px;
     width: auto;
@@ -74,23 +76,26 @@ ul.nav-links{
     line-height: normal;
     margin-right: 2rem;
     padding: 10px;
-    a{
+
+    a {
         color: black;
         transition: colour;
     }
-    a:hover{
+
+    a:hover {
         color: #797979;
     }
-    svg{
+
+    svg {
         margin: 0.5rem;
     }
 }
 
-.logo{
+.logo {
     max-width: 10rem;
     max-height: auto;
 }
 
-a{
+a {
     text-decoration: none;
 }

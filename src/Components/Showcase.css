@@ -140,7 +140,7 @@
     display: flex;
     justify-content: center;
     background-color: #ffffff;
-    padding: 1.5em;
+    padding: 2em;
     min-height: 80vh;
     min-width: 50vw;
 }
@@ -189,10 +189,34 @@
     }
 }
 
+
+.magnify-image-container{
+    background-color: beige;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    max-height: 100vh;
+    max-width: auto;
+    box-shadow: 15px 25px 1px rgb(0, 0, 0);
+    p{
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        font-family: monospace;
+        font-size: 1rem;
+        padding-top: 3.5em;
+    }
+
+}
+
+
 .magnify-image{
     display: flex;
-    padding: 2rem;
-
+    max-height: auto;
+    max-width: auto;
+    overflow: hidden;
+    border: 1px black solid;
 }
 
 
