@@ -78,7 +78,7 @@ const Showcase = () => {
             <GlassMagnifier
               imageSrc={mainImg}
               imageAlt="showcase-img"
-              magnifierSize="80%"
+              magnifierSize="60%"
               magnifierBorderColor="rgba(0, 0, 0)"
               magnifierBorderSize="1"
             />
