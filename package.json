@@ -1,7 +1,7 @@
 {
   "name": "e-com",
   "version": "0.1.0",
-  "homepage": "/",
+  "homepage": "http:///",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "7.21.11",
@@ -47,5 +47,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "rait-internship"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

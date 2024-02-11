@@ -74,18 +74,19 @@ const Home = () => {
             </div>
           </div>
           <div className="pic-container melts col-4">
-          {highResLoaded2 ? (
-            <Link to="/shop" onClick={handleClick("melts")}>
-              <img
-                rel="preload"
-                as="image"
-                fetchpriority="high"
-                src="/pic-3.png"
-                alt="pic-2"
-                id="pic-3"
-                className="img"
-              />
-            </Link>):(
+            {highResLoaded2 ? (
+              <Link to="/shop" onClick={handleClick("melts")}>
+                <img
+                  rel="preload"
+                  as="image"
+                  fetchpriority="high"
+                  src="/pic-3.png"
+                  alt="pic-2"
+                  id="pic-3"
+                  className="img"
+                />
+              </Link>
+            ) : (
               <img src="/pic-3_low.png" alt="pic-1 low res"></img>
             )}
             <div className="button">
@@ -101,18 +102,19 @@ const Home = () => {
             </div>
           </div>
           <div className="pic-container kints col-4">
-          {highResLoaded3 ? (
-            <Link to="/shop" onClick={handleClick("kints")}>
-              <img
-                src="/pic-2.png"
-                rel="preload"
-                as="image"
-                fetchpriority="high"
-                alt="pic-2"
-                id="pic-2"
-                className="img"
-              />
-            </Link>):(
+            {highResLoaded3 ? (
+              <Link to="/shop" onClick={handleClick("kints")}>
+                <img
+                  src="/pic-2.png"
+                  rel="preload"
+                  as="image"
+                  fetchpriority="high"
+                  alt="pic-2"
+                  id="pic-2"
+                  className="img"
+                />
+              </Link>
+            ) : (
               <img src="/pic-2_low.png" alt="pic-1 low res"></img>
             )}
             <div className="button">
@@ -129,70 +131,91 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="about row">
-          <div className="about-text col-6">
-            <h1>-ABOUT-</h1>
-            <small>
-              Welcome to Tsuki, where <b>"Tsuki [つき]" meaning 'moon'</b> in
+        
+        <div id="carouselExample" class="carousel carousel-dark slide" >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active" >
+              <img src="/about-pic.png" class="d-block w-100" alt="img1"></img>
+              <div class="carousel-caption d-none d-md-block">
+                <h2>-ABOUT-</h2>
+                <p>Welcome to Tsuki, where <b>"Tsuki [つき]" meaning 'moon'</b> in
               Japanese, symbolizes the essence of our brand – a celestial,
               timeless beauty that illuminates the night sky. We believe that
               fashion and home products should not only be stylish but also
               ethically made. From the cotton fields to the final stitch, we
               prioritize ethical sourcing, fair labor, and environmental
-              consciousness.{" "}
-            </small>
-          </div>
-          <div className="about-image col-6">
-            <LazyLoadImage
-              effect="blur"
-              src="/about-pic.png"
-              alt="about-img"
-              loading="lazy"
-            />
-          </div>
-        </div>
-
-        <div className="craft row">
-          <div className="craft-img col-6">
-            <LazyLoadImage
-              effect="blur"
-              src="/carft.png"
-              alt="craftsmanship"
-              loading="lazy"
-            />
-          </div>
-          <div className="craft-text col-6">
-            <h1>-CRAFTSMANSHIP-</h1>
-            <small>
-              At Tsuki, we believe that fashion and home products should not
+              consciousness.{" "}</p>
+              </div>
+            </div>
+            <div class="carousel-item" >
+              <img src="/carft.png" class="d-block w-100" alt="img2"></img>
+              <div class="carousel-caption d-none d-md-block">
+                <h2>-CRAFTSMANSHIP-</h2>
+                <p>At Tsuki, we believe that fashion and home products should not
               only be stylish but also ethically made.From the cotton fields to
               the final stitch, we prioritize ethical sourcing, fair labor, and
               environmental consciousness.Our unisex clothing and home goods are
               a testament to our commitment to sustainable and responsible
-              manufacturing practices.
-            </small>
-          </div>
-        </div>
-
-        <div className="join row">
-          <div className="join-text col-6">
-            <h1>-TSUKI COMMUNITY-</h1>
-            <small>
-              We invite you to explore our collections, where fashion meets
+              manufacturing practices.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/shop/basic-banner.png"
+                class="d-block w-100"
+                alt="img3"
+              ></img>
+              <div class="carousel-caption d-none d-md-block">
+                <h2>-TSUKI COMMUNITY-</h2>
+                <p>We invite you to explore our collections, where fashion meets
               conscience, and where every purchase becomes a vote for a better,
               more sustainable future. Join the Tsuki community and embrace the
               journey of self-expression, ethical living, and the artistry of
-              moonlit stories.
-            </small>
+              moonlit stories.</p>
+              </div>
+            </div>
           </div>
-          <div className="join-img col-6">
-            <LazyLoadImage
-              effect="blur"
-              src="/join.png"
-              alt="join-img"
-              loading="lazy"
-            />
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
 
         <div className="bottom">
@@ -214,6 +237,8 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+
       </div>
     </>
   );
