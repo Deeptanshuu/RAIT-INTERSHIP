@@ -1,7 +1,8 @@
 
 .pic-wrapper {
   display: flex;
-  padding: 5rem 5rem;
+  padding: 1rem 5rem;
+  padding-bottom: 5rem;
   box-sizing: border-box;
   margin: 0%;
   overflow: hidden;
@@ -83,14 +84,13 @@
   max-width: auto;
   min-height: 30vh;
   padding: 5rem;
-
   .help-img {
     display: flex;
     max-width: 240px;
     max-height: 300px;
     border: 1px solid black;
     justify-content: center;
-
+    box-shadow: 25px 25px black;
     img {
       max-width: 100%;
       max-height: 100%;
@@ -104,7 +104,7 @@
     background-color: #f6e0b5;
     border: solid;
     border-width: 1px;
-
+    box-shadow: 25px 25px black;
     p {
       font-weight: 300;
       letter-spacing: 0.14em;
@@ -114,20 +114,22 @@
 
 #carouselExample{
   display: flex;
-  padding: 5rem 0rem;
-  overflow: hidden; 
+  border: 1px solid black;
+  overflow: hidden;
 }
 
 .carousel-item{
-  max-height: 900px;
+  max-height: 850px;
 }
 
 .carousel-caption{
   display: flex;
   margin-bottom: 15rem;
   padding: 5rem;
-  background-color: #ffffffb9;
+  background-color: #ffffffd7;
   backdrop-filter: blur(10px);
+  border: 1px solid black;
+  box-shadow: 25px 25px black;
   font-family:"Montserrat", sans-serif;
   h2{
   font-size: 3rem;

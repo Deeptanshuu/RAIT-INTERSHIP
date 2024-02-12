@@ -1,3 +1,4 @@
+
 .mantra {
     display: flex;
     position: relative;
@@ -29,8 +30,8 @@
 .nav-links {
     display: flex;
     justify-content: center;
-    margin: auto;
-    padding: 0.7rem;
+    max-height: 62px;
+    padding: 0.5rem;
     letter-spacing: 0.1em;
     border: solid;
     border-width: 1px;
@@ -41,16 +42,20 @@ ul.nav-links {
     display: flex;
     justify-content: space-around;
     list-style: none;
-
     li {
         color: rgba(0, 0, 0, 0.75);
         font-size: 1em;
+        padding: 10px;
         font-weight: 500;
-        transition: all 0.3s 0.1s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
 
     li:hover {
-        color: #b1a2a2;
+        background-color: beige;
+        border: 1px solid black;
+        box-shadow: 15px 15px black;
+        color: #535353;
+        scale: 1.1;
     }
 }
 
@@ -70,19 +75,26 @@ ul.nav-links {
 
 .nav-icons {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     height: 55px;
-    width: auto;
+    width: 182px;
     justify-self: right;
     line-height: normal;
     margin-right: 2rem;
-    padding: 10px;
-
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
     a {
         color: black;
+        line-height: 10px;
         transition: colour;
+        scale: 1.2;
+        transition: all 0.2s ease-in-out;
     }
 
     a:hover {
+        border: 1px solid black;
+        box-shadow: 5px 5px black;
         color: #797979;
     }
 

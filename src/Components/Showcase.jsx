@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { GlassMagnifier } from "react-image-magnifiers";
+import { GlassMagnifier} from "react-image-magnifiers";
 import QuantitySelector from "./QuatitySelector";
 import { useCart } from "./CartContext";
 import { Link, useLocation } from "react-router-dom";
