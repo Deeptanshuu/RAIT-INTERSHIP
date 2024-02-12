@@ -25,8 +25,9 @@ const Showcase = () => {
     setMainImg(imgSrc);
   };
 
+
   function handleAddToCart() {
-    addToCart(selectedItem);
+    addToCart(selectedItem, quantity);
     toast("Item added to your cart! ✅", {
       position: "bottom-right",
       autoClose: 3000,

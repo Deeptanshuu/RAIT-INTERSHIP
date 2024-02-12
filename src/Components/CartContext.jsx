@@ -31,8 +31,10 @@ const cartReducer = (state, action) => {
 const CartProvider = ({ children }) => {
   const [cart, dispatch] = useReducer(cartReducer, []);
 
-  const addToCart = (item) => {
-    dispatch({ type: 'ADD_TO_CART', payload: item });
+  const addToCart = (item,quantity) => {
+    for (let i = 0; i < quantity; i++) {
+      dispatch({ type: 'ADD_TO_CART', payload: item });
+    }
   };
 
   const removeFromCart = (item) => {
@@ -47,7 +49,7 @@ const CartProvider = ({ children }) => {
   // Add tax and shipping charges
   const calculateTotalWithTaxAndShipping = () => {
     const subtotal = calculateTotal();
-    const taxRate = 0.1; // 10% tax
+    const taxRate = 0.10; // 10% tax
     const shippingCost = 100; // Fixed shipping cost
 
     const tax = subtotal * taxRate;

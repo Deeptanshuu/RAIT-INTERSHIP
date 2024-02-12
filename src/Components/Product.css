@@ -83,12 +83,13 @@
     }
 }
 
+/*View SearchPage.css for parent of this div*/
 .product-card:hover{
     .quick-view{
-        bottom: 82px;      
+        bottom: 83px;      
         opacity: 1;
-        transition: opacity .2s ease-in-out,
-                    bottom .2s ease-in-out;
+        transition: opacity .3s ease-in-out,
+                    bottom 0.5s cubic-bezier(.79,.14,.15,.86); 
     }
 }
 
