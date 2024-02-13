@@ -18,6 +18,7 @@ Server status: [![Netlify Status](https://api.netlify.com/api/v1/badges/5266ea2b
 - [x] Fetch product data from the backend API.
 - [x] Implement features such as product search, filtering, and pagination.
 - [ ] Implement user authentication (optional).
+- [ ] Login and order history , 
 
 ### Shopping Cart Functionality:
 
