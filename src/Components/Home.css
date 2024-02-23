@@ -1,10 +1,8 @@
 
 .pic-wrapper {
   display: flex;
-  padding: 1rem 5rem;
+  padding: 5rem 5rem;
   padding-bottom: 5rem;
-  box-sizing: border-box;
-  margin: 0%;
   overflow: hidden;
 }
 
@@ -52,7 +50,9 @@
 }
 
 .img {
-  min-height: 70vh;
+  width: auto;
+  height: 70vh;
+  overflow: hidden;
   transition: all 0.15s 0.05s ease-in-out;
 }
 
@@ -154,6 +154,6 @@
 }
 
 .carousel-indicators{
-  margin: 10rem 5rem;
+  margin: 5rem 5rem;
   scale: 2;
 }
