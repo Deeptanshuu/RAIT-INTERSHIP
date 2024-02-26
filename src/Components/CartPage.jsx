@@ -21,8 +21,10 @@ const CartPage = () => {
       </div>
 
       {cart.length === 0 ? (
-        <div className="empty-cart-message fw-bold p-5 text-center">
-          <p>Nothing in your cart....yet.</p>
+        <div className="dotted-bg">
+          <div className="empty-cart-message fw-bold p-5 text-center">
+            <p>Nothing in your cart....yet.🛒</p>
+          </div>
         </div>
       ) : (
 

@@ -13,6 +13,20 @@
     }
 }
 
+
+.empty-cart-message{
+    min-height: 45vh;
+    background-color: #a2e0ce;
+    border-bottom: 1px solid black;
+    p{
+        scale: 1.1;
+        font-weight: 600;
+        font-size: larger;
+        letter-spacing: 0.3rem;
+        margin-top: 5rem;
+    }
+}
+
 .cart-wrapper{
     display: flex;
     justify-content: center;
