@@ -44,7 +44,7 @@ const Showcase = () => {
   }
 
   const handleIncrement = () => {
-    setQuantity(quantity + 1);    
+    setQuantity(quantity + 1);
   };
 
   const handleDecrement = () => {
