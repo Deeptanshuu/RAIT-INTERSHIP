@@ -53,6 +53,8 @@ const Showcase = () => {
     }
   };
 
+  //console.log(selectedItem);
+
   return (
     <div>
       <div className="header-showcase">

@@ -47,27 +47,29 @@
     linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
     linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
     var(--dot-color);
+
     .showcase-text-name{
-        padding: 10px;
+        padding: 5px;
         --background-color: wheat;
         h2{
-            font-weight: lighter;
-            text-decoration: underline;
+            font-weight: 600;
+            text-decoration: underline double;
             letter-spacing: 0.1em;
         }
     }
+
     .showcase-text-price{
         padding: 5px;
         --background-color: brown;
         h4{
-            font-weight: lighter;
+            font-weight: 500;
         }
     }
     .showcase-text-stock{
         --background-color: rgb(253, 253, 253);
         h6{
             font-size: large;
-            font-weight: 500;
+            font-weight: 600;
         }
     }
     .showcase-text-desc{
@@ -90,18 +92,21 @@
     background-color: rgb(240, 240, 240);
     border: 1px black solid;
     display: flex;
-    margin-top: 30px;
+    margin-top: 35px;
     max-height: 35px;
-    min-width: 140px;
+    min-width: 50px;
+    border-radius: 0.3rem;
     span{
         display: flex;
-        min-width: 80px;
+        min-width: 50px;
         text-align: center;
         justify-content: center;
         font-size: larger;
         font-weight: 100;
     }
     button{
+        z-index: 1;
+        overflow: hidden;
         background-color: #000000;
         font-size: larger;
         min-width: 30px;

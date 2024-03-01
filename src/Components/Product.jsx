@@ -25,6 +25,7 @@ const Products = () => {
       {items.map(item => (
         
             <div className="product-card" id={item.id}>
+              <Link to={`/showcase?id=${item.id}`} className="view-item-button">
 
                 <div className="product-status-chip" style={{ opacity: item.inStock ? 0 : 1 }}>
                       <h6>SOLD OUT</h6>
@@ -47,6 +48,7 @@ const Products = () => {
                     </Link>
               </div> 
 
+              </Link>
             </div>
       ))}
       </div>
