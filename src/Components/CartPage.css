@@ -65,9 +65,8 @@
     --background-color: aquamarine;
     display: flex;
     justify-content: flex-start;
-    padding: 10px;
+    padding-top: 20px;
     ul{
-        padding: 10px;
         font-size: larger;
         font-weight: 500;
         text-decoration: underline;

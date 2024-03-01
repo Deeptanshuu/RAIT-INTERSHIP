@@ -1,6 +1,8 @@
 // CartContext.js
 import React, { createContext, useContext, useReducer, useEffect } from "react";
 
+const Cartfromlocalstorage = JSON.parse(localStorage.getItem('cart') || "[]")
+
 const CartContext = createContext();
 
 const cartReducer = (state, action) => {
@@ -63,23 +65,16 @@ const cartReducer = (state, action) => {
   }
 };
 
-const Cartfromlocalstorage = JSON.parse(localStorage.getItem('cart') || "[]");
-
 const CartProvider = ({ children }) => {
   const [cart, dispatch] = useReducer(cartReducer, Cartfromlocalstorage);
 
-  // Load cart items from localStorage when the component mounts\
-  try {
-    useEffect(() => {
-      const storedCart = localStorage.getItem('cart');
-      if (!storedCart) {
-        dispatch({ type: 'LOAD_CART', payload: JSON.parse(storedCart) });
-      }
-    }, []);
-  
-  } catch (error) {
-    console.log(error)
-  }
+  // Load cart items from localStorage when the component mounts
+  useEffect(() => {
+    const storedCart = localStorage.getItem('cart');
+    if (storedCart) {
+      dispatch({ type: 'LOAD_CART', payload: JSON.parse(storedCart) });
+    }
+  }, []);
 
   // Save cart items to localStorage whenever the cart changes
   useEffect(() => {
@@ -152,8 +147,6 @@ const CartProvider = ({ children }) => {
     </CartContext.Provider>
   );
 };
-
-
 
 const useCart = () => {
   const context = useContext(CartContext);
