@@ -44,7 +44,7 @@ const Showcase = () => {
   }
 
   const handleIncrement = () => {
-    setQuantity(quantity + 1);
+    setQuantity(quantity + 1);    
   };
 
   const handleDecrement = () => {
@@ -52,6 +52,8 @@ const Showcase = () => {
       setQuantity(quantity - 1);
     }
   };
+
+  //console.log(selectedItem);
 
   return (
     <div>
