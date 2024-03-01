@@ -63,6 +63,8 @@ const cartReducer = (state, action) => {
   }
 };
 
+const Cartfromlocalstorage = JSON.parse(localStorage.getItem('cart') || [])
+
 const CartProvider = ({ children }) => {
   const [cart, dispatch] = useReducer(cartReducer, Cartfromlocalstorage);
 
@@ -146,7 +148,7 @@ const CartProvider = ({ children }) => {
   );
 };
 
-const Cartfromlocalstorage = JSON.parse(localStorage.getItem('cart') || [" "])
+
 
 const useCart = () => {
   const context = useContext(CartContext);
