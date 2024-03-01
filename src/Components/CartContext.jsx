@@ -1,5 +1,6 @@
 // CartContext.js
 import React, { createContext, useContext, useReducer, useEffect } from "react";
+import Cartfromlocalstorage from "../App";
 
 const CartContext = createContext();
 
@@ -63,7 +64,6 @@ const cartReducer = (state, action) => {
   }
 };
 
-const Cartfromlocalstorage = JSON.parse(localStorage.getItem('cart') || [])
 
 const CartProvider = ({ children }) => {
   const [cart, dispatch] = useReducer(cartReducer, Cartfromlocalstorage);
