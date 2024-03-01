@@ -47,7 +47,7 @@ ul.nav-links {
         font-size: 1em;
         padding: 10px;
         font-weight: 500;
-        transition: all 0.3s cubic-bezier(.79,.14,.15,.86); 
+        transition: all 0.5s cubic-bezier(.79,.14,.15,.86); 
     }
 
     li:hover {
@@ -55,12 +55,7 @@ ul.nav-links {
         background-color: #fbd1a2;
         box-shadow: 15px 15px black;
         color: #535353;
-        scale: 1.11;
-    }
-    
-    li:active{
-        transition: all 0.01s ease-in-out;
-        scale: 1.05;
+        scale: 1.15;
     }
 }
 
@@ -88,9 +83,8 @@ ul.nav-links {
     line-height: normal;
     margin-right: 2rem;
     padding: 0.5rem;
-    margin-bottom: 1rem;
     a {
-        border-radius: 15%;
+        border-radius: 10%;
         color: black;
         line-height: 10px;
         transition: colour;
@@ -102,11 +96,6 @@ ul.nav-links {
         background-color: #a2e0ce;
         border: 1px solid black;
         box-shadow: 5px 5px black;
-    }
-
-    a:active{
-        transition: all 0.01s ease-in-out;
-        scale: 1.1;
     }
 
     svg {

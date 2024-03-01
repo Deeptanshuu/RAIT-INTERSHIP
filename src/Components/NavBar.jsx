@@ -51,20 +51,20 @@ const NavBar = () => {
           </div>
         </div>
         <div className="Navbar-wrapper">
-            <ul className="nav-links">
-              <Link to="/login">
-                <li> Loginコレクション </li>
-              </Link>
-              <Link to="/">
-                <li> Homeホームページ </li>
-              </Link>
-              <Link to="/shop">
-                <li> Collectionすべての商品 </li>
-              </Link>
-              <Link to="/contact">
-                <li> Contact usお問い合わせ </li>
-              </Link>
-            </ul>
+          <ul className="nav-links">
+            <Link to="/login">
+              <li> Loginコレクション </li>
+            </Link>
+            <Link to="/">
+              <li> Homeホームページ </li>
+            </Link>
+            <Link to="/shop">
+              <li> Collectionすべての商品 </li>
+            </Link>
+            <Link to="/contact">
+              <li> Contact usお問い合わせ </li>
+            </Link>
+          </ul>
         </div>
       </nav>
 
