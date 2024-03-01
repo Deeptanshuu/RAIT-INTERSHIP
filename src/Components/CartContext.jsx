@@ -1,7 +1,7 @@
 // CartContext.js
 import React, { createContext, useContext, useReducer, useEffect } from "react";
 
-const Cartfromlocalstorage = JSON.parse(localStorage.getItem('cart') || [])
+const Cartfromlocalstorage = JSON.parse(localStorage.getItem('cart') || [" "])
 
 const CartContext = createContext();
 
