@@ -21,9 +21,12 @@ const Showcase = () => {
   const selectedItem = allItems.find((item) => item.id === id);
 
   const [mainImg, setMainImg] = useState(selectedItem.img);
+
   const handleImageClick = (imgSrc) => {
     setMainImg(imgSrc);
+    window.scrollTo(0,200);
   };
+
 
   function handleAddToCart() {
     addToCart(selectedItem, quantity);
@@ -178,12 +181,17 @@ const Showcase = () => {
             </p>
           </div>
         </div>
-
+        
+        <div className="more-items-cover">
+          <div className="more-items-text">
+            <h4>- Explore similar items -</h4>
+          </div>
         <div className="more-items">
+
         {allItems.sort(() => Math.random() - 0.5).slice(0,5).map(item => (
         
         <div className="product-card" id={item.id}>
-          <Link to={`/showcase?id=${item.id}`} className="view-item-button">
+          <Link to={`/showcase?id=${item.id}`} onClick={() => handleImageClick(item.img)} className="view-item-button">
 
             <div className="product-status-chip" style={{ opacity: item.inStock ? 0 : 1 }}>
                   <h6>SOLD OUT</h6>
@@ -191,9 +199,9 @@ const Showcase = () => {
 
 
           <div className="product-card-image">
-            {<Link to={`/showcase?id=${item.id}`}>
-            <LazyLoadImage effect="blur" src={item.img} alt="product-card-view" loading='lazy' />
-            </Link> }
+            <Link to={`/showcase?id=${item.id}`} onClick={() => handleImageClick(item.img)} >
+              <LazyLoadImage effect="blur" src={item.img} alt="product-card-view" loading='lazy' />
+            </Link>
             </div>
 
           <div className="product-card-text"> 
@@ -201,14 +209,16 @@ const Showcase = () => {
                     <h1>QUICK VIEW</h1>
               </div>        
             <h3>{ item.name }</h3>
-                <Link to={`/showcase?id=${item.id}`} className="view-item-button">
+                <Link to={`/showcase?id=${item.id}`} onClick={() => handleImageClick(item.img)} className="view-item-button">
                 - View Item -
                 </Link>
           </div> 
 
           </Link>
         </div>
+        
   ))}
+        </div>
         </div>
 
         <div className="footer-showcase">
