@@ -122,3 +122,11 @@ ul.nav-links {
 a {
     text-decoration: none;
 }
+
+.Navbar-links-wrapper.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    /* Add any additional styles you need for the sticky state */
+  }

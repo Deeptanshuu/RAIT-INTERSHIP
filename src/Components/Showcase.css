@@ -160,7 +160,6 @@
     min-width: 100vw;
     padding: 1rem;
     letter-spacing: 0.1em;
-    border-top: 0.5px solid #000000;
     transition: all 0.2s ease-in-out;
     a{
         min-height: 100%;
@@ -230,3 +229,8 @@
 }
 
 
+.more-items{
+    display: inline-flex;
+    padding: 0%;
+    border-top: 1px solid #000000;
+}

@@ -29,6 +29,7 @@ const Home = () => {
     };
     img3.src = "/pic-2.png";
   }, []);
+
   const handleClick = (sectionId) => {
     return () => {
       const shopLink = "/shop"; // Replace with the actual path to your '/shop' page

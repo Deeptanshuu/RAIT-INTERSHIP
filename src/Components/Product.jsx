@@ -51,6 +51,7 @@ const Products = () => {
               </Link>
             </div>
       ))}
+      
       </div>
 
           <div className="footer p-5 text-xl-center fw-lighter " style={{background: "#f4e0ea"}}>

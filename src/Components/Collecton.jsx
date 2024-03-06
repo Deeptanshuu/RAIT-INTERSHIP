@@ -69,7 +69,7 @@ const Collecton = () => {
       </div>
 
       <div className="kints" id='kints'>
-      <div className="banner row">
+        <div className="banner row">
         <div className="banner-text banner-knits col-6">
         <div className="banner-text-above-btn"><p>knits.</p></div>
           <Link to="/shop/product?category=knits">-See More-</Link>
