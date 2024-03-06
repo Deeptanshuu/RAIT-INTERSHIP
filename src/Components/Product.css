@@ -58,11 +58,11 @@
     background-color: #000000;
     color: #ffffff;
     padding: 0.4rem;
-    max-width: 30% ;
+    max-width: 25% ;
     h6{
         font-family: 'Segoe UI Light';
         font-size: medium;
-        letter-spacing: 0.12em;
+        letter-spacing: 0.1em;
         text-align: center;
     }
 }
