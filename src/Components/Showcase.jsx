@@ -23,8 +23,8 @@ const Showcase = () => {
   const [mainImg, setMainImg] = useState(selectedItem.img);
 
   const handleImageClick = (imgSrc) => {
+    window.scrollTo(0,320);
     setMainImg(imgSrc);
-    window.scrollTo(0,300);
   };
 
 
@@ -200,7 +200,7 @@ const Showcase = () => {
 
           <div className="product-card-image">
             <Link to={`/showcase?id=${item.id}`} onClick={() => handleImageClick(item.img)} >
-              <LazyLoadImage effect="blur" src={item.img} alt="product-card-view" loading='lazy' />
+              <LazyLoadImage effect="blur" src={item.img} alt="product-card-view" />
             </Link>
             </div>
 
@@ -222,7 +222,7 @@ const Showcase = () => {
         </div>
 
         <div className="footer-showcase">
-          <Link to="/shop" className="back-to-collection-button">
+          <Link to={`/shop/product?category=${selectedItem.category}`}className="back-to-collection-button">
             <p>- Back to Collection -</p>
           </Link>
         </div>
