@@ -49,6 +49,7 @@
     border-top: 0px;
     box-sizing: border-box;
     background-color: #ffffff;
+    height: 100%;
 }
 
 
@@ -88,12 +89,13 @@
 /*View SearchPage.css for parent of this div*/
 .product-card:hover{
     .quick-view{
-        bottom: 83px;      
+        bottom: 0px;      
         opacity: 1;
         transition: opacity .3s ease-in-out,
                     bottom 0.5s cubic-bezier(.79,.14,.15,.86); 
     }
 }
+
 
 
 

@@ -38,15 +38,16 @@ const Products = () => {
                 </Link> }
                 </div>
 
-              <div className="product-card-text"> 
                 <div className="quick-view">
-                        <h1>QUICK VIEW</h1>
-                  </div>        
+                  <h1>QUICK VIEW</h1>
+              </div>
+              <div className="product-card-text">         
                 <h3>{ item.name }</h3>
                     <Link to={`/showcase?id=${item.id}`} className="view-item-button">
                     - View Item -
                     </Link>
-              </div> 
+              </div>
+
 
               </Link>
             </div>
