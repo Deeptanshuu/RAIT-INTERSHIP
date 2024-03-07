@@ -24,7 +24,7 @@ const Showcase = () => {
 
   const handleImageClick = (imgSrc) => {
     setMainImg(imgSrc);
-    window.scrollTo(0,200);
+    window.scrollTo(0,300);
   };
 
 

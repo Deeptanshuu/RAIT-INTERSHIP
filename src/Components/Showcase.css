@@ -84,25 +84,22 @@
 .quantity-box-container{
     --background-color: aqua;
     display: flex;
-    justify-content: safe;
-    min-height: 100px;
+    min-height: 83px;
 }
 
 .quantity-box{
     background-color: rgb(240, 240, 240);
     border: 1px black solid;
     display: flex;
-    margin-top: 35px;
     max-height: 35px;
     min-width: 50px;
-    border-radius: 0.3rem;
     span{
         display: flex;
         min-width: 50px;
         text-align: center;
         justify-content: center;
         font-size: larger;
-        font-weight: 100;
+        font-weight: 600;
     }
     button{
         z-index: 1;
@@ -111,7 +108,8 @@
         font-size: larger;
         min-width: 30px;
         border: none;
-        color: white;
+        color: rgb(0, 0, 0);
+        background-color: #ffffff;
     }
 }
 
