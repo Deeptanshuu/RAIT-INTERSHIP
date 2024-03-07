@@ -67,6 +67,7 @@
     justify-content: flex-start;
     padding-top: 20px;
     ul{
+        margin-left: 50px;
         font-size: larger;
         font-weight: 500;
         text-decoration: underline;
@@ -74,6 +75,7 @@
 }
 
 .quantity-box{
+    margin-right: 5px;
     margin-top: 22px;
     min-height: 25px;
     background-color: #ffffff;

@@ -100,16 +100,16 @@
         justify-content: center;
         font-size: larger;
         font-weight: 600;
+        border-left: 1px black solid;
+        border-right: 1px black solid;
     }
     button{
         z-index: 1;
         overflow: hidden;
-        background-color: #000000;
         font-size: larger;
         min-width: 30px;
         border: none;
         color: rgb(0, 0, 0);
-        background-color: #ffffff;
     }
 }
 
@@ -238,9 +238,6 @@
     border-right:0px;
     scale: 0.9;
     box-shadow: 20px 20px;
-    .product-card-text{
-        
-    }
 }
 
 .more-items-cover{
