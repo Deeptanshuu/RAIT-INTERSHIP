@@ -8,7 +8,7 @@
     font-weight: 200;
     letter-spacing: 0.15em;
     transition: all 0.3s 0.1s cubic-bezier(.79, .14, .15, .86);
-
+    scale: 0.9;
     a {
         color: black;
     }
@@ -28,7 +28,6 @@
 
 .nav-links {
     display: flex;
-    justify-content: center;
     max-height: 60px;
     padding: 0.5rem;
     letter-spacing: 0.1em;
@@ -39,7 +38,9 @@
 
 ul.nav-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 30em;
+    padding-right: 30rem;
     margin-bottom: 0rem;
     li {
         border-radius: 50px;
@@ -80,21 +81,16 @@ ul.nav-links {
 
 .nav-icons {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    height: 55px;
-    width: 182px;
     justify-self: right;
-    line-height: normal;
+    width: 10rem;
+    height: 2.6em;
     margin-right: 2rem;
-    padding: 0.5rem;
     margin-bottom: 1rem;
     a {
         border-radius: 15%;
         color: black;
-        line-height: 10px;
         transition: colour;
-        scale: 1.2;
         transition: all 0.3s cubic-bezier(.79,.14,.15,.86); 
     }
 
@@ -102,11 +98,12 @@ ul.nav-links {
         background-color: #a2e0ce;
         border: 1px solid black;
         box-shadow: 5px 5px black;
+        scale: 1.15;
     }
 
     a:active{
         transition: all 0.01s ease-in-out;
-        scale: 1.1;
+        scale: 1.08;
     }
 
     svg {
@@ -115,7 +112,7 @@ ul.nav-links {
 }
 
 .logo {
-    max-width: 10rem;
+    max-width: 8rem;
     max-height: auto;
 }
 
