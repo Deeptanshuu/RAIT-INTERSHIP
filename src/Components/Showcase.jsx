@@ -209,7 +209,7 @@ const Showcase = () => {
           </div>  
           <div className="product-card-text">       
             <h3>{ item.name }</h3>
-                <Link to={`/showcase?id=${item.id}`} onClick={() => handleImageClick(item.img)} className="view-item-button">
+                <Link to={`/shop/product/showcase?id=${item.id}`} onClick={() => handleImageClick(item.img)} className="view-item-button">
                 - View Item -
                 </Link>
           </div> 
