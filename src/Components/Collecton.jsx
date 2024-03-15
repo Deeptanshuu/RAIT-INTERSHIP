@@ -27,25 +27,25 @@ const Collecton = () => {
                 <div className="product-status-chip" style={{ opacity: 0 }}>
                   <h6>SOLD OUT</h6>
                 </div>
-                <div className="product-card-image"><Link to="/showcase?id=b-2"><LazyLoadImage effect="blur" src="/shop/k-cor-cap.png" alt="img for card" loading='lazy'/></Link></div>
+                <div className="product-card-image"><Link to="/shop/product/showcase?id=b-2"><LazyLoadImage effect="blur" src="/shop/k-cor-cap.png" alt="img for card" loading='lazy'/></Link></div>
                 <div className="quick-view">      <h1>QUICK VIEW</h1>      </div>
-                <div className="product-card-text"><h3>Corduroy Tsuki Cap</h3><Link to="/showcase?id=b-2">VIEW ITEM</Link></div>
+                <div className="product-card-text"><h3>Corduroy Tsuki Cap</h3><Link to="/shop/product/showcase?id=b-2">VIEW ITEM</Link></div>
             </div>
             <div className="product-card col-4">
             <div className="product-status-chip" style={{ opacity: 0 }}>
                   <h6>SOLD OUT</h6>
               </div>
-            <div className="product-card-image"><Link to="/showcase?id=b-4"><LazyLoadImage effect="blur" src="/shop/basic-2.png" alt="img for card" loading='lazy'/></Link></div>
+            <div className="product-card-image"><Link to="/shop/product/showcase?id=b-4"><LazyLoadImage effect="blur" src="/shop/basic-2.png" alt="img for card" loading='lazy'/></Link></div>
             <div className="quick-view">      <h1>QUICK VIEW</h1>      </div>
-            <div className="product-card-text"><h3>夕焼け Sunset Glow Sweatshirt</h3><Link to="/showcase?id=b-4">VIEW ITEM</Link></div>
+            <div className="product-card-text"><h3>夕焼け Sunset Glow Sweatshirt</h3><Link to="/shop/product/showcase?id=b-4">VIEW ITEM</Link></div>
             </div>
             <div className="product-card col-4">
             <div className="product-status-chip" style={{ opacity: 0 }}>
                   <h6>SOLD OUT</h6>
                 </div>
-            <div className="product-card-image"><Link to="/showcase?id=b-1"><LazyLoadImage effect="blur" src="/shop/basic-3.png" alt="img for card" loading='lazy'/></Link></div>
+            <div className="product-card-image"><Link to="/shop/product/showcase?id=b-1"><LazyLoadImage effect="blur" src="/shop/basic-3.png" alt="img for card" loading='lazy'/></Link></div>
             <div className="quick-view">      <h1>QUICK VIEW</h1>      </div>
-            <div className="product-card-text"><h3>Embroidered Logo T-shirt</h3><Link to="/showcase?id=b-1">VIEW ITEM</Link></div>
+            <div className="product-card-text"><h3>Embroidered Logo T-shirt</h3><Link to="/shop/product/showcase?id=b-1">VIEW ITEM</Link></div>
             </div>
         </div>
 
@@ -67,7 +67,7 @@ const Collecton = () => {
                   <h6>SOLD OUT</h6>
                 </div>
         <div className="product-card-image">
-            <Link to="/showcase?id=m-1">
+            <Link to="/shop/product/showcase?id=m-1">
                 <LazyLoadImage effect="blur" src="/shop/melt-sweat.png" alt="img for card" loading='lazy' />
             </Link>
         </div>
@@ -76,7 +76,7 @@ const Collecton = () => {
         </div>
         <div className="product-card-text">
             <h3>Melted Sweatshirt</h3>
-            <Link to="/showcase?id=m-1">VIEW ITEM</Link>
+            <Link to="/shop/product/showcase?id=m-1">VIEW ITEM</Link>
         </div>
     </div>
 
@@ -85,7 +85,7 @@ const Collecton = () => {
             <h6>SOLD OUT</h6>
         </div>
         <div className="product-card-image">
-            <Link to="/showcase?id=m-2">
+            <Link to="/shop/product/showcase?id=m-2">
                 <LazyLoadImage effect="blur" src="/shop/melt-pants.png" alt="img for card" loading='lazy'/>
             </Link>
         </div>
@@ -94,7 +94,7 @@ const Collecton = () => {
         </div>
         <div className="product-card-text">
             <h3>Melted Sweatpants</h3>
-            <Link to="/showcase?id=m-2">VIEW ITEM</Link>
+            <Link to="/shop/product/showcase?id=m-2">VIEW ITEM</Link>
         </div>
     </div>
 
@@ -103,7 +103,7 @@ const Collecton = () => {
                   <h6>SOLD OUT</h6>
         </div>
         <div className="product-card-image">
-            <Link to="/showcase?id=m-4">
+            <Link to="/shop/product/showcase?id=m-4">
                 <LazyLoadImage effect="blur" src="/shop/melt-socks.png" alt="img for card" loading='lazy' />
             </Link>
         </div>
@@ -112,7 +112,7 @@ const Collecton = () => {
         </div>
         <div className="product-card-text">
             <h3>Melted Socks</h3>
-            <Link to="/showcase?id=m-4">VIEW ITEM</Link>
+            <Link to="/shop/product/showcase?id=m-4">VIEW ITEM</Link>
         </div>
     </div>
       </div>
@@ -135,7 +135,7 @@ const Collecton = () => {
                   <h6>SOLD OUT</h6>
                 </div>
                 <div className="product-card-image">
-                    <Link to="/showcase?id=k-3">
+                    <Link to="/shop/product/showcase?id=k-3">
                         <LazyLoadImage effect="blur" src="/shop/k-beanie.png" alt="img for card" loading="lazy" />
                     </Link>
                 </div>
@@ -144,7 +144,7 @@ const Collecton = () => {
                 </div>
                 <div className="product-card-text">
                     <h3>Mischief Beanie</h3>
-                    <Link to="/showcase?id=k-3">VIEW ITEM</Link>
+                    <Link to="/shop/product/showcase?id=k-3">VIEW ITEM</Link>
                 </div>
             </div>
 
@@ -153,7 +153,7 @@ const Collecton = () => {
                   <h6>SOLD OUT</h6>
                 </div>
                 <div className="product-card-image">
-                    <Link to="/showcase?id=k-1">
+                    <Link to="/shop/product/showcase?id=k-1">
                         <LazyLoadImage effect="blur" src="/shop/knits-2.png" alt="img for card" loading="lazy" />
                     </Link>
                 </div>
@@ -162,7 +162,7 @@ const Collecton = () => {
                 </div>
                 <div className="product-card-text">
                     <h3>Tsuki すき Knit Sweater</h3>
-                    <Link to="/showcase?id=k-1">VIEW ITEM</Link>
+                    <Link to="/shop/product/showcase?id=k-1">VIEW ITEM</Link>
                 </div>
             </div>
 
@@ -171,8 +171,8 @@ const Collecton = () => {
                     <h6>SOLD OUT</h6>
                 </div>
                 <div className="product-card-image">
-                    <Link to="/showcase?id=k-2">
-                        <img src="/shop/knits-3.png" alt="img for card" loading="lazy" />
+                    <Link to="/shop/product/showcase?id=k-2">
+                        <img src="shop/knits-3.png" alt="img for card" loading="lazy" />
                     </Link>
                 </div>
                 <div className="quick-view">
@@ -180,7 +180,7 @@ const Collecton = () => {
                 </div>
                 <div className="product-card-text">
                     <h3>楽しい Tanoshii / 悲しみ Kanashimi Beanies</h3>
-                    <Link to="/showcase?id=k-2">VIEW ITEM</Link>
+                    <Link to="/shop/product/showcase?id=k-2">VIEW ITEM</Link>
                 </div>
             </div>
         </div>
