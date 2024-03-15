@@ -76,7 +76,7 @@ function App() {
           <Route path='/shop' element={<Collecton/>}></Route>
           <Route path='/contact' element={<Contact/>}></Route>
           <Route path='/shop/product' element={<Product/>}></Route>
-          <Route path='/showcase' element={<Showcase/>}></Route>
+          <Route path='/shop/product/showcase' element={<Showcase/>}></Route>
           <Route path='/cart' element={<CartPage/>}></Route>
           <Route path='/search' element={<SearchPage/>}></Route>
         </Routes>

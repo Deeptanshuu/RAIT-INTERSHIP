@@ -191,7 +191,7 @@ const Showcase = () => {
         {allItems.sort(() => Math.random() - 0.5).slice(0,5).map(item => (
         
         <div className="product-card" id={item.id}>
-          <Link to={`/showcase?id=${item.id}`} onClick={() => handleImageClick(item.img)} className="view-item-button">
+          <Link to={`/shop/product/showcase?id=${item.id}`} onClick={() => handleImageClick(item.img)} className="view-item-button">
 
             <div className="product-status-chip" style={{ opacity: item.inStock ? 0 : 1 }}>
                   <h6>SOLD OUT</h6>
@@ -199,7 +199,7 @@ const Showcase = () => {
 
 
           <div className="product-card-image">
-            <Link to={`/showcase?id=${item.id}`} onClick={() => handleImageClick(item.img)} >
+            <Link to={`/shop/product/showcase?id=${item.id}`} onClick={() => handleImageClick(item.img)} >
               <LazyLoadImage effect="blur" src={item.img} alt="product-card-view" />
             </Link>
             </div>
