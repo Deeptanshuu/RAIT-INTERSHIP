@@ -23,10 +23,9 @@ const Showcase = () => {
   const [mainImg, setMainImg] = useState(selectedItem.img);
 
   const handleImageClick = (imgSrc) => {
-    window.scrollTo(0,320);
+    window.scrollTo(0, 320);
     setMainImg(imgSrc);
   };
-
 
   function handleAddToCart() {
     addToCart(selectedItem, quantity);
@@ -56,8 +55,6 @@ const Showcase = () => {
   };
 
   //console.log(selectedItem);
-
-
 
   return (
     <div>
@@ -109,7 +106,7 @@ const Showcase = () => {
           </div>
 
           <div className="showcase-text-stock">
-            <h6>{selectedItem.inStock ? "In Stock" : "Out of Stock"}</h6>
+            <h6>{selectedItem.inStock ? "In Stock ✅" : "Out of Stock ❌"}</h6>
           </div>
 
           <div class="dropdown">
@@ -181,48 +178,65 @@ const Showcase = () => {
             </p>
           </div>
         </div>
-        
+
         <div className="more-items-cover">
           <div className="more-items-text">
             <h4>- Explore similar items -</h4>
           </div>
-        <div className="more-items">
+          <div className="more-items">
+            {allItems
+              .sort(() => Math.random() - 0.5)
+              .slice(0, 5)
+              .map((item) => (
+                <div className="product-card" id={item.id}>
+                  <Link
+                    to={`/shop/product/showcase?id=${item.id}`}
+                    onClick={() => handleImageClick(item.img)}
+                    className="view-item-button"
+                  >
+                    <div
+                      className="product-status-chip"
+                      style={{opacity: item.inStock ? 0 : 1, }}>
+                      <h6>SOLD OUT</h6>
+                    </div>
 
-        {allItems.sort(() => Math.random() - 0.5).slice(0,5).map(item => (
-        
-        <div className="product-card" id={item.id}>
-          <Link to={`/shop/product/showcase?id=${item.id}`} onClick={() => handleImageClick(item.img)} className="view-item-button">
+                    <div className="product-card-image">
+                      <Link
+                        to={`/shop/product/showcase?id=${item.id}`}
+                        onClick={() => handleImageClick(item.img)}
+                      >
+                        <LazyLoadImage
+                          effect="blur"
+                          src={item.img}
+                          alt="product-card-view"
+                        />
+                      </Link>
+                    </div>
 
-            <div className="product-status-chip" style={{ opacity: item.inStock ? 0 : 1 }}>
-                  <h6>SOLD OUT</h6>
-            </div>
-
-
-          <div className="product-card-image">
-            <Link to={`/shop/product/showcase?id=${item.id}`} onClick={() => handleImageClick(item.img)} >
-              <LazyLoadImage effect="blur" src={item.img} alt="product-card-view" />
-            </Link>
-            </div>
-
-          <div className="quick-view">
-              <h1>QUICK VIEW</h1>
-          </div>  
-          <div className="product-card-text">       
-            <h3>{ item.name }</h3>
-                <Link to={`/shop/product/showcase?id=${item.id}`} onClick={() => handleImageClick(item.img)} className="view-item-button">
-                - View Item -
-                </Link>
-          </div> 
-
-          </Link>
-        </div>
-        
-  ))}
-        </div>
+                    <div className="quick-view">
+                      <h1>QUICK VIEW</h1>
+                    </div>
+                    <div className="product-card-text">
+                      <h3>{item.name}</h3>
+                      <Link
+                        to={`/shop/product/showcase?id=${item.id}`}
+                        onClick={() => handleImageClick(item.img)}
+                        className="view-item-button"
+                      >
+                        - View Item -
+                      </Link>
+                    </div>
+                  </Link>
+                </div>
+              ))}
+          </div>
         </div>
 
         <div className="footer-showcase">
-          <Link to={`/shop/product?category=${selectedItem.category}`}className="back-to-collection-button">
+          <Link
+            to={`/shop/product?category=${selectedItem.category}`}
+            className="back-to-collection-button"
+          >
             <p>- Back to Collection -</p>
           </Link>
         </div>
