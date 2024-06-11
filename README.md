@@ -19,8 +19,8 @@ Server status: [![Netlify Status](https://api.netlify.com/api/v1/badges/5266ea2b
 - [x] Set up state management (React Context or Redux) for the shopping cart.
 - [x] Fetch product data from the backend API.
 - [x] Implement features such as product search, filtering, and pagination.
-- [ ] Implement user authentication (optional).
-- [ ] Login and order history , 
+- [x] Implement user authentication (optional).
+- [x] Login and order history , 
 
 ### Shopping Cart Functionality:
 
@@ -35,7 +35,7 @@ Server status: [![Netlify Status](https://api.netlify.com/api/v1/badges/5266ea2b
 
 ### Checkout Process (Optional):
 
-- [ ] If implemented, create a checkout process that collects necessary information for order placement.
+- [x] If implemented, create a checkout process that collects necessary information for order placement.
 
 ### Inventory Management (Optional):
 
